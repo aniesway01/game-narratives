@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>遊戲劇情互動敘事地圖集</title>
+<style>
+:root{--bg:#0f0f1a;--card-bg:#1a1a2e;--card-hover:#222244;--accent:#e94560;--accent2:#533483;--text:#eee;--text-dim:#999;--border:#333}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+.header{background:linear-gradient(135deg,var(--accent2),var(--accent));padding:2rem;text-align:center}
+.header h1{font-size:2rem;margin-bottom:.5rem}
+.header p{color:rgba(255,255,255,.8)}
+.stats{display:flex;justify-content:center;gap:2rem;margin-top:1rem}
+.stat{text-align:center}.stat-num{font-size:1.5rem;font-weight:bold}.stat-label{font-size:.8rem;color:rgba(255,255,255,.7)}
+.filters{padding:1rem 2rem;display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center}
+.filter-btn{background:var(--card-bg);border:1px solid var(--border);color:var(--text);padding:.4rem 1rem;border-radius:1rem;cursor:pointer;font-size:.85rem;transition:all .2s}
+.filter-btn:hover,.filter-btn.active{background:var(--accent);border-color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1.2rem;padding:1.5rem 2rem;max-width:1400px;margin:0 auto}
+.card{background:var(--card-bg);border:1px solid var(--border);border-radius:12px;padding:1.2rem;transition:all .2s;cursor:pointer}
+.card:hover{background:var(--card-hover);transform:translateY(-2px);box-shadow:0 4px 20px rgba(233,69,96,.15)}
+.card-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.8rem}
+.card-title{font-size:1.1rem;font-weight:600}
+.card-num{background:var(--accent2);color:white;font-size:.75rem;padding:.2rem .5rem;border-radius:.5rem}
+.card-meta{display:flex;gap:.5rem;margin-bottom:.6rem;flex-wrap:wrap}
+.tag{background:rgba(255,255,255,.08);padding:.15rem .5rem;border-radius:.4rem;font-size:.75rem;color:var(--text-dim)}
+.tag.engine{border-left:2px solid var(--accent)}.tag.status{border-left:2px solid #4ecdc4}
+.card-desc{font-size:.85rem;color:var(--text-dim);line-height:1.5;margin-bottom:.8rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.card-footer{display:flex;justify-content:space-between;align-items:center}
+.progress{font-size:.75rem;color:var(--text-dim)}
+.progress-bar{width:80px;height:4px;background:var(--border);border-radius:2px;overflow:hidden;display:inline-block;vertical-align:middle;margin-left:.5rem}
+.progress-fill{height:100%;background:var(--accent);border-radius:2px;transition:width .3s}
+.card-link{color:var(--accent);text-decoration:none;font-size:.8rem}
+.card-link:hover{text-decoration:underline}
+@media(max-width:768px){.grid{grid-template-columns:1fr;padding:1rem}.header h1{font-size:1.5rem}}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>遊戲劇情互動敘事地圖集</h1>
+  <p>Game Narratives Interactive Atlas</p>
+  <div class="stats">
+    <div class="stat"><div class="stat-num" id="total-games">22</div><div class="stat-label">遊戲</div></div>
+    <div class="stat"><div class="stat-num" id="completed-games">0</div><div class="stat-label">已解析</div></div>
+    <div class="stat"><div class="stat-num" id="total-passages">—</div><div class="stat-label">段落</div></div>
+  </div>
+</div>
+<div class="filters">
+  <button class="filter-btn active" data-filter="all">全部</button>
+  <button class="filter-btn" data-filter="renpy">Ren'Py</button>
+  <button class="filter-btn" data-filter="rpgmaker">RPG Maker</button>
+  <button class="filter-btn" data-filter="html">HTML/Twine</button>
+  <button class="filter-btn" data-filter="other">其他</button>
+</div>
+<div class="grid" id="game-grid"></div>
+<script>
+const GAMES=[
+{id:1,name:"Witches of Ravenbrook",engine:"Other",engineType:"other",version:"v1.0.1",author:"Saltyjustice",desc:"Ravenbrook \u5927\u5b78\u842c\u8056\u7bc0\u6176\u5178\u88ab\u5973\u5deb\u52ab\u6301\uff0c\u5730\u4e0b\u57ce\u63a2\u96aa + \u6230\u9b25\u4e2d\u8b8a\u8eab\u6a5f\u5236",progress:0,status:"\u5f85\u89e3\u6790",folder:"witches-of-ravenbrook"},
+{id:2,name:"Journey Into Sissyhood",engine:"Ren'Py",engineType:"renpy",version:"Beta v1.0.0v3",author:"LollipopSissy",desc:"\u4e92\u52d5\u8996\u89ba\u5c0f\u8aaa\uff0c\u5feb/\u6162\u96d9\u8def\u7dda\u8b8a\u8eab\uff0c\u542b\u50ac\u7720\u97f3\u8a0a\u548c\u6e2c\u9a57",progress:0,status:"\u5f85\u89e3\u6790",folder:"journey-into-sissyhood"},
+{id:3,name:"Regency Masks",engine:"HTML",engineType:"html",version:"Alpha v1",author:"Blauz.",desc:"\u6539\u7de8\u514b\u8607\u9b6f TRPG\u300aMasks of Nyarlathotep\u300b\uff0c1803 \u651d\u653f\u6642\u4ee3\u79d8\u9b6f\u5192\u96aa",progress:0,status:"\u5f85\u89e3\u6790",folder:"regency-masks"},
+{id:4,name:"Friends of Mine",engine:"HTML (Twine)",engineType:"html",version:"v1.4.4",author:"Sunfall",desc:"70 \u842c\u5b57+\u6c99\u76d2 Twine \u904a\u6232\uff0c\u4e03\u689d\u4e3b\u7dda\uff0c1000+ \u5834\u666f",progress:0,status:"\u5f85\u89e3\u6790",folder:"friends-of-mine"},
+{id:5,name:"Between",engine:"RPG Maker MV",engineType:"rpgmaker",version:"Alpha v0.17.4",author:"6six6",desc:"\u90fd\u5e02\u79d1\u5b78\u5947\u5e7b RPG\uff0c\u7b56\u7565\u6230\u9b25 + \u8b8a\u8eab\u8077\u696d\u7cfb\u7d71",progress:0,status:"\u5f85\u89e3\u6790",folder:"between"},
+{id:6,name:"Cursed Rock",engine:"HTML (Twine)",engineType:"html",version:"Alpha v0.5",author:"tgnoob5",desc:"\u64bf\u5230\u77f3\u982d\u5f8c\u7684\u8b8a\u8eab\u6545\u4e8b\uff0c\u542b\u5922\u5883 vs \u73fe\u5be6\u5206\u652f",progress:0,status:"\u5f85\u89e3\u6790",folder:"cursed-rock"},
+{id:7,name:"Clean Pool",engine:"Ren'Py",engineType:"renpy",version:"v0.6.5.1",author:"soisoi9876",desc:"Rogue-like \u6558\u4e8b\uff0c\u6e38\u6cf3\u968a\u8a13\u7df4\u8a2d\u65bd\u4e2d\u7684\u795e\u79d8\u529b\u91cf",progress:0,status:"\u5f85\u89e3\u6790",folder:"clean-pool"},
+{id:8,name:"Crossdressing in Camelot",engine:"RPG Maker MV",engineType:"rpgmaker",version:"v0.57.2",author:"stickyicky",desc:"\u4e9e\u745f\u738b\u80cc\u666f\u5192\u96aa RPG\uff0c\u8b8a\u8eab\u8d8a\u591a\u8d8a\u5f37",progress:0,status:"\u5f85\u89e3\u6790",folder:"crossdressing-in-camelot"},
+{id:9,name:"Oathbreaker",engine:"SRPG Studio",engineType:"other",version:"Beta v0.14.0",author:"Oathbreaker Dev",desc:"\u706b\u7d0b\u98a8\u683c\u6230\u8853 RPG\uff0c\u50ad\u5175\u5718\u7684\u7de9\u6162\u8b8a\u8eab",progress:0,status:"\u5f85\u89e3\u6790",folder:"oathbreaker"},
+{id:10,name:"Pact with a Witch",engine:"Ren'Py",engineType:"renpy",version:"v00.22.00",author:"jonnymelabo",desc:"\u8207\u5973\u5deb\u7684\u56db\u6b21\u7d04\u6703\u5951\u7d04\uff0c\u62ef\u6551\u88ab\u8a5b\u5492\u7684\u5ba4\u53cb",progress:0,status:"\u5f85\u89e3\u6790",folder:"pact-with-a-witch"},
+{id:11,name:"Coffee Story",engine:"Game Maker",engineType:"other",version:"Alpha 20251229v5",author:"unniex",desc:"\u5922\u5883\u6ef2\u900f\u73fe\u5be6\u7684\u50cf\u7d20\u5192\u96aa\uff0c13000 \u884c\u5c0d\u767d",progress:0,status:"\u5f85\u89e3\u6790",folder:"coffee-story"},
+{id:12,name:"A Mirror's Curse",engine:"HTML",engineType:"html",version:"v0.29",author:"amaty",desc:"\u9ad8\u4e2d\u751f\u7684\u6bcf\u65e5\u8b8a\u8eab\u8a5b\u5492\uff0c\u7d19\u5a03\u5a03\u7cfb\u7d71 + \u6821\u5712\u751f\u6d3b",progress:0,status:"\u5df2\u4e0b\u8f09",folder:"a-mirrors-curse"},
+{id:13,name:"Student Transfer",engine:"Ren'Py",engineType:"renpy",version:"v9.1",author:"CobaltCore",desc:"\u8d85\u5927\u5206\u652f\u6a39\u7684\u9577\u7bc7\u8996\u89ba\u5c0f\u8aaa\uff0c\u8d85\u81ea\u7136\u529b\u91cf\u7684\u9ad8\u4e2d\u751f",progress:0,status:"\u5f85\u89e3\u6790",folder:"student-transfer"},
+{id:14,name:"The Goblin's Pet - Recollared",engine:"HTML",engineType:"html",version:"Ch.4",author:"kokopelli",desc:"\u82f1\u96c4\u88ab\u9b54\u6cd5\u9805\u5708\u675f\u7e1b\uff0c\u88ab\u8feb\u4f8d\u5949\u54e5\u5e03\u6797\u4e3b\u4eba",progress:0,status:"\u5f85\u89e3\u6790",folder:"goblins-pet-recollared"},
+{id:15,name:"Better Earth",engine:"RPG Maker VX Ace",engineType:"rpgmaker",version:"v0.25.0",author:"Hito125",desc:"AR \u904a\u6232\u6d29\u6f0f\u5230\u73fe\u5be6\uff0c100+ NPC \u8b8a\u8eab\uff0c22+ \u7d50\u5c40",progress:0,status:"\u5f85\u89e3\u6790",folder:"better-earth"},
+{id:16,name:"The Secrets of Charlton School",engine:"HTML",engineType:"html",version:"v0.1.93",author:"lauren",desc:"\u5c0f\u93ae\u4e92\u52d5\u5c0f\u8aaa\uff0c\u8abf\u67e5\u795e\u79d8\u4e8b\u4ef6",progress:0,status:"\u5f85\u89e3\u6790",folder:"secrets-of-charlton-school"},
+{id:17,name:"Penumbra Hotel",engine:"RPG Maker MZ",engineType:"rpgmaker",version:"Alpha v0.2.0",author:"HelloEveryoned1",desc:"\u4e09\u540d\u523a\u5ba2\u5728\u8c6a\u83ef\u9152\u5e97\u4e2d\u7684 Ero RPG",progress:0,status:"\u5f85\u89e3\u6790",folder:"penumbra-hotel"},
+{id:18,name:"Fem Clicker",engine:"HTML",engineType:"html",version:"v0.0.2",author:"akita",desc:"\u653e\u7f6e\u578b\u9ede\u64ca\u904a\u6232\uff0c\u8c50\u9952\u5973\u795e\u7684\u96d9\u8def\u7dda\u8b8a\u8eab",progress:0,status:"\u5f85\u89e3\u6790",folder:"fem-clicker"},
+{id:19,name:"GameOver",engine:"Ren'Py",engineType:"renpy",version:"v2.4.2",author:"azulookami",desc:"\u5931\u61b6\u8005\u5728\u795e\u79d8\u5c0f\u93ae\u9192\u4f86\uff0c\u591a\u7d50\u5c40\u57fa\u65bc\u4e0d\u540c\u5931\u6557\u689d\u4ef6",progress:0,status:"\u5f85\u89e3\u6790",folder:"gameover"},
+{id:20,name:"The Proteus Effect",engine:"RPG Maker MV",engineType:"rpgmaker",version:"v10.2.3",author:"Proxxie",desc:"\u559c\u5287 RPG\uff0c\u904a\u6232\u6e2c\u8a66\u54e1\u88ab\u56f0\u865b\u64ec\u4e16\u754c",progress:0,status:"\u5f85\u89e3\u6790",folder:"the-proteus-effect"},
+{id:21,name:"Trapped in a Fantasy Femdom Brothel",engine:"Ren'Py",engineType:"renpy",version:"v00.03.08",author:"jonnymelabo",desc:"Femdom \u4e16\u754c\u4e2d\u7684\u50b5\u52d9\u511f\u9084\u8207\u751f\u5b58",progress:0,status:"\u5f85\u89e3\u6790",folder:"trapped-femdom-brothel"},
+{id:22,name:"Magical Camp",engine:"RPG Maker VX Ace",engineType:"rpgmaker",version:"v0.5c (\u505c\u66f4)",author:"HLF",desc:"\u7d93\u5178\u4f5c\u54c1\uff1a\u5931\u6557\u8005\u88ab\u56f0\u9b54\u6cd5\u5c11\u5973\u8a13\u7df4\u71df",progress:0,status:"\u5f85\u89e3\u6790",folder:"magical-camp"}
+];
+function renderGrid(filter='all'){
+const grid=document.getElementById('game-grid');grid.innerHTML='';
+const filtered=filter==='all'?GAMES:GAMES.filter(g=>g.engineType===filter);
+filtered.forEach(g=>{
+const card=document.createElement('div');card.className='card';
+card.onclick=()=>{if(g.progress>0)window.location.href=`games/${g.folder}/index.html`;};
+card.innerHTML=`<div class="card-header"><div class="card-title">${g.name}</div><span class="card-num">#${g.id}</span></div><div class="card-meta"><span class="tag engine">${g.engine}</span><span class="tag status">${g.version}</span><span class="tag">${g.author}</span></div><div class="card-desc">${g.desc}</div><div class="card-footer"><span class="progress">${g.status}<span class="progress-bar"><span class="progress-fill" style="width:${g.progress}%"></span></span></span>${g.progress>0?`<a class="card-link" href="games/${g.folder}/index.html">\u95b1\u8b80 \u2192</a>`:'<span class="card-link" style="opacity:.4">\u5c1a\u672a\u89e3\u6790</span>'}</div>`;
+grid.appendChild(card);});
+document.getElementById('completed-games').textContent=GAMES.filter(g=>g.progress>=100).length;
+}
+document.querySelectorAll('.filter-btn').forEach(btn=>{btn.addEventListener('click',()=>{document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');renderGrid(btn.dataset.filter);});});
+renderGrid();
+</script>
+</body>
+</html>

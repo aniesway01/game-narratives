@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{GAME_NAME}} \u2014 \u4e92\u52d5\u6558\u4e8b\u5730\u5716</title>
+<link rel="stylesheet" href="../../shared/style.css">
+</head>
+<body>
+<div class="toolbar">
+  <a class="back-link" href="../../">\u2190 \u8fd4\u56de</a>
+  <h1>{{GAME_NAME}}</h1>
+  <input class="search-box" placeholder="\u641c\u5c0b\u6587\u672c\u3001\u89d2\u8272\u3001\u5834\u666f...">
+  <div class="view-tabs">
+    <button class="view-tab active" data-view="narrative">\u6309\u6558\u4e8b</button>
+    <button class="view-tab" data-view="scene">\u6309\u5834\u666f</button>
+    <button class="view-tab" data-view="character">\u6309\u89d2\u8272</button>
+  </div>
+</div>
+<div class="content"><div style="text-align:center;padding:4rem;color:#999"><p>\u8f09\u5165\u4e2d...</p></div></div>
+<script src="../../shared/viewer.js"></script>
+<script>
+viewer=new NarrativeViewer({gameName:'{{GAME_NAME}}',dataPath:'data/passages.json',metaPath:'data/meta.json'});
+viewer.init();
+</script>
+</body>
+</html>
