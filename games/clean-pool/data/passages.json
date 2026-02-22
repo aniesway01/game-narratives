@@ -1,0 +1,759 @@
+[
+  {
+    "pid": 1,
+    "title": "start",
+    "body": "",
+    "choices": [
+      {
+        "text": "→ new_game",
+        "target": "new_game"
+      },
+      {
+        "text": "→ day_1_intro",
+        "target": "day_1_intro"
+      }
+    ],
+    "characters": [],
+    "group": "Prologue"
+  },
+  {
+    "pid": 2,
+    "title": "new_game",
+    "body": "Select your vessel to pour knowledge into...\n*rattle* Good.\nFind their bodies, stop the repeat.",
+    "choices": [
+      {
+        "text": "→ screen",
+        "target": "screen"
+      },
+      {
+        "text": "→ day_1_intro",
+        "target": "day_1_intro"
+      }
+    ],
+    "characters": [],
+    "group": "Prologue"
+  },
+  {
+    "pid": 3,
+    "title": "day_1_intro",
+    "body": "The cabby pulled up to the swimming training center's dirt parking.\nCab Driver: \"Here we are!\"\nCab Driver: \"You take care now!\"\nTime to step out of the car.\nI thank the cabby, he nods then drives down the soggy dirt road.\n[Player Character]: \"*Phew* That was a long drive! Looks like the rest of the team got here faster.\"\nWe managed to get a great price booking multiple rides up the mountain.\nI went inside the building to meet up with the rest of the team.",
+    "choices": [
+      {
+        "text": "→ day_1_chaos_01",
+        "target": "day_1_chaos_01"
+      },
+      {
+        "text": "→ intro_reception_area",
+        "target": "intro_reception_area"
+      }
+    ],
+    "characters": [
+      "Cab Driver",
+      "[Player Character]"
+    ],
+    "group": "Day 1"
+  },
+  {
+    "pid": 4,
+    "title": "intro_reception_area",
+    "body": "Yep.\nI'm the last to arrive...\n[Player Character]: \"Hey everyone! Sorry I'm late.\"\n[Player Character]: \"Okay, gather around and let's go over some ground rules...\"\nCaptain: \"Oh [current_character.name], you made it! I can assign you your job.\"\nCaptain: \"Aside from training, we have to maintain this place for the owners.\"\nCaptain: \"So with that in mind, here is the plan...\"\nI'll go over the schedule of training and working.\nEveryone seems to be pretty receptive and willing.\n[Player Character]: \"Now... give me a second.\"\nI take my notebook out of my bag and list out everyone's job...\nCaptain: \"[current_character.name], your job will be to keep the pool cleaned and make energy drinks for the team.\"\nCaptain: \"Everything you need will be in the janitor's closet in the pool room. Here are the keys.\"\nCaptain: \"Okay, I think everyone is here and has a something to do!\"\nLastly for me. I will be making energy drinks for everyone and keeping the pool clean with chemical in the janitors closet.\nI remember one of the owners telling me there are instructions in the janitor's closet.\nCaptain: \"We will be here for 10 days, so train hard!\"",
+    "choices": [
+      {
+        "text": "→ reception_area",
+        "target": "reception_area"
+      }
+    ],
+    "characters": [
+      "Captain",
+      "[Player Character]"
+    ],
+    "group": "Day 1"
+  },
+  {
+    "pid": 5,
+    "title": "day_1_chaos_01",
+    "body": "I felt strange the moment I got out of the cabby's car...\nI could feel parts of me shrinking and growing!\n[Player Character]: \"Huh!?\"\n[Player Character]: \"Wha- whats happening to me!\"\nQuickly, I turn back to the car!\nI see the cabby driver slam the door shut and speeds off down the road...\n[Player Character]: \"wha-\"\nSomething felt familiar when I stepped out of the car.\nI saw some of the swim team running at me shouting!\nTHE CAR! THE CAR!\nBefore I could react, I heard the car door slam shut!\nThe cabby speeds down the road in a blaze of dust!\n[Player Character]: \"wha-\"",
+    "choices": [
+      {
+        "text": "→ end_game",
+        "target": "end_game"
+      },
+      {
+        "text": "→ end_game",
+        "target": "end_game"
+      }
+    ],
+    "characters": [
+      "[Player Character]"
+    ],
+    "group": "Day 1"
+  },
+  {
+    "pid": 6,
+    "title": "day_2_intro",
+    "body": "I'm awake...\nI must have woken up super early.\\nIt's still a bit dark out.\n[Player Character]: \"Ow...\"\nMy body feels so sore... We didn't train THAT hard.\nI hear a lot of commotion outside? But.. we don't have any practice scheduled this early.\nI decide to get out of bed to check it out.\n[Player Character]: \"Huh?\"\n[Player Character]: \"...What happened to me!?\"\nThe voices outside get louder!\nIn a panic, I run out to the courtyard.\n[Player Character]: \"GAH!\"\nInstinctively, I put my arm over my chest to keep it from wobbling and kept going.\n[Player Character]: \"mpf...\"",
+    "choices": [
+      {
+        "text": "→ day_2_courtyard_area",
+        "target": "day_2_courtyard_area"
+      }
+    ],
+    "characters": [
+      "[Player Character]"
+    ],
+    "group": "Day 2"
+  },
+  {
+    "pid": 7,
+    "title": "day_2_courtyard_area",
+    "body": "The courtyard is in complete chaos.\nMost everyone is panicking and some are crying.\nEveryone's panicking....\n[Player Character]: \"Everyone focus! What do we know so far?\"\nCaptain: \"Everyone focus! What do we know so far?\"\nSo many people were trying to talk at the same time..\n[Player Character]: \"Okay ENOUGH!. Sorry... Everyone listen.\"\nThe room fell silent. Everyone look at me with expecting eyes.\n[Player Character]: \"...Well... someone here has to show some leadership! Right?\"\nCaptain: \"Okay ENOUGH!. Sorry... Everyone listen.\"\nWe started at the Captain.\nCaptain: \"...Well... someone here has to show some leadership! Right?\"\nThe group fell into murmurs and others still inspecting themselves.\n[Player Character]: \"...So. Obviously we need to figure out what happened...\"\nI need to think... First, despite the changes everyone is relatively fine.\n[Player Character]: \"Okay... Health wise we are all still fine...\"\nUh oh, some of the swimmers looked annoyed at that comment...\nCaptain: \"..I mean, like, we can still move normally and none of us are bed ridden.\"\nCaptain: \"With that in mind... I'm going issue out some new jobs.\"\nThere were some small groans in our crowd.\nCaptain: \"Just relax... the jobs are to help us find a solution.When I call your name we can talk about what you should do.\"\nAfter sometime...\nEveryone's been assigned. Now for my own responsibilities...\nWe still need to maintain the facility... I guess have to keep the pool cleaned.\nA lot of personal things were stolen last night. Clothes, belongings...\nWhats worse is a lot of food and equipment were taken too, according to most of the team.\nThis is bad. Really bad....\nThis facility is high up on the mountain and... pretty far from the city.\n.....\nThat weird dream I had last night... I need to write down what I saw and heard.\nLooking around I can see some of the places I dreamt. Thankfully, before running out I spotted my notepad and pen. So those weren't stolen..\nI'll put it in my room with some locations the team can check on this afternoon.\nHopefully they will find what was promised...\nHeh... I must have really lost my mind.. but this is all I got going right now.  Alright...\n[Player Character]: \"Okay everyone! We all have stuff to do, keep your eyes peeled, and don't slack on your training!\"\nCaptain: \"...So. Obviously we need to figure out what happened...\"\nCaptain goes silent to think.\nCaptain: \"Okay... Health wise we are all still fine...\"\nSome people looked annoyed at that comment...\nCaptain: \"..I mean, like, we can still move normally and none of us are bed ridden.\"\nCaptain: \"With that in mind... I'm going issue out some new jobs.\"\nThere were some small groans in our crowd.\nCaptain: \"Just relax... the jobs are to help us find a solution.When I call your name we can talk about what you should do.\"\nAfter sometime...\nCaptain: \"Last one again... haha..\\n[current_character.name], come over here.\"\nCaptain: \"We still need to maintain the facility as part of the renting agreement.\"\nCaptain: \"That means I'll still need you to keep the pool clean...\"\nCaptain: \"A... A lot of personal things were stolen last night.\"\nCaptain: \"Whats worse is a lot of food and equipment were taken too, according to most of the team.\"\nCaptain: \"...\"\n[Player Character]: \"Do... Do we need to find food and water?\"\nCaptain: \"...yeah. This facility is high up on the mountain and pretty far from any city I know of..\"\n[Player Character]: \"...T-this is not good.\"\nCaptain: \"Call me crazy, but I had this weird dream last night.\"\n[Player Character]: \"...?\"\nCaptain: \"...Look, trust me on this. I put a notepad in your room with some locations around us.\"\nThe Captain explains what was written.\nCaptain: \"...So just let each of us know or write in the notepad where you want us to look for food and water.\"\nCaptain: \"Leave the notebook outside your room before you rest for the day and we can take care of the rest.\"\n[Player Character]: \"Okay.. I'll see what I can do.\"\nCaptain: \"Thank you...\"\nThe captain turns their attention to the rest of the team.\nCaptain: \"Okay everyone! We all have stuff to do, keep your eyes peeled, and don't slack on your training!\"\nThe team nodded skeptically and we dispersed.",
+    "choices": [
+      {
+        "text": "→ courtyard_area",
+        "target": "courtyard_area"
+      }
+    ],
+    "characters": [
+      "Captain",
+      "[Player Character]"
+    ],
+    "group": "Day 2"
+  },
+  {
+    "pid": 8,
+    "title": "swimmer_dialogue_01",
+    "body": "Diver: \"...w-was it something I ate?\"\nDiver: \"I feel so sore..\"\nLifter: \"My muscles...*sniffle* All that training... No!\"\nLifter: \"I won't give in too... whatever is going on!\"",
+    "choices": [],
+    "characters": [
+      "Diver",
+      "Lifter"
+    ],
+    "group": "Day 2"
+  },
+  {
+    "pid": 9,
+    "title": "swimmer_dialogue_02",
+    "body": "Diver: \"I did some stretching... ate food..\"\nDiver: \"When I was resting, it felt like any other night... did I miss something obvious last night?\"\nLifter: \"I checked out the shed before bed.\"\nLifter: \"...but I just wanted to see the tools in there..\"\nSinger: \"All my stuff vanished, gone and I'm wet!\"\nSinger: \"I... I need to sit down..\"\nSailer: \"I texted my father letting him know I made it, before playing on my phone...\"\nSailer: \"I didn't have anything to do with this!\"\nDancer: \"I sat in my room after practice!\"\nDancer: \"I was on my phone looking at b...\"\nDancer: \"um.. I-I didn't see anything!\"\nReader: \"When I woke up, I was drenched in water..\"\nReader: \"All of my clothing are gone... but... the books I took from the library are still in my room.\"\nSpotter: \"I didn't see anything suspicious yesterday!\"\nSpotter: \"I don't know why it hurts to move too.. We just did a couple of laps!\"\nEater: \"Nothing out of the ordinary... I think?\"\nEater: \"I cooked as planned and then woke up... like this...\"",
+    "choices": [],
+    "characters": [
+      "Dancer",
+      "Diver",
+      "Eater",
+      "Lifter",
+      "Reader",
+      "Sailer",
+      "Singer",
+      "Spotter"
+    ],
+    "group": "Day 2"
+  },
+  {
+    "pid": 10,
+    "title": "day_3_intro",
+    "body": "[Player Character]: \"Huh?\"\n[Player Character]: \"I didn't wake up wet this time...\"\n[Player Character]: \"AH!\"\nMe and bed sheets are soaked with water...\n....\n[Player Character]: \"...M-my chest and legs got bigger... my voice! Oh no...\"\n...\n[Player Character]: \"It's g-gone... this insane...\"\n[Player Character]: \"No changes today...\"\n[Player Character]: \"...I feel more like myself today.\"\nLike yesterday there is commotion outside\n....\n[Player Character]: \"Alright, we gotta get out there...\"\nI put my arm over my chest to keep my breasts still\n[Player Character]: \"mpf...\"\nI try to ignore how sensitive my nipples are as I slowly walk to the courtyard.\n[Player Character]: \"Okay, lets check on everyone else.\"\nI head down to the courtyard\n[Player Character]: \"Okay, lets check on everyone else.\"\nI head down to the courtyard",
+    "choices": [
+      {
+        "text": "→ day_3_courtyard_area",
+        "target": "day_3_courtyard_area"
+      }
+    ],
+    "characters": [
+      "[Player Character]"
+    ],
+    "group": "Day 3"
+  },
+  {
+    "pid": 11,
+    "title": "day_3_courtyard_area",
+    "body": "[Player Character]: \"Everyone's here? Lets take figure out what everyone found yesterday...\"\nCaptain: \"Everyone's here? Lets take figure out what everyone found yesterday...\"\nI didn't see anything unusual. I did wake up wet and.. and everything about me got bigger\n*tears begin to swell up around their eyes*\nIt's okay, come over here.\n... I didn't change since yesterday\n... My body didn't change last night and I woke up wet too. I didn't see anything yesterday unusual.\n...\n[Player Character]: \"...Hey are you okay?\"\nCaptain: \"...Hey are you okay?\"\nDid anyone here voice in their dreams...\nThe group seems to get uncomfortable at the question.\nN-no... at least I don't remember.\nThe rest of the group seemed to agree...\nCaptain: \"Well lets keep trying to find answers....\"\nCaptain: \"Remember to check the note I leave on my door to see what needs to be gathered..\"\nCaptain: \"...and if anyone sees anything, well, scream.. Anything to get our attention!\"\nCaptain: \"Well lets keep trying to find answers. [current_character.name]... how is the pool maintenance?\"\n[Player Character]: \"Something about the pool is different\"\n[Player Character]: \"It has a light purple ish color now\"\n[Player Character]: \"I got the chems in the pool yesterday\"\n[Player Character]: \"Didn't see anything out of the ordinary...\"\nCaptain: \"Thanks for keeping up with that...\"\nThe group quietly disperses..",
+    "choices": [
+      {
+        "text": "→ courtyard_area",
+        "target": "courtyard_area"
+      }
+    ],
+    "characters": [
+      "Captain",
+      "[Player Character]"
+    ],
+    "group": "Day 3"
+  },
+  {
+    "pid": 12,
+    "title": "swimmer_dialogue_d3_01",
+    "body": "Diver: \"...w-was it something I ate?\"\nDiver: \"I feel so sore..\"\nLifter: \"My muscles...*sniffle* All that training... No!\"\nLifter: \"I won't give in too... whatever is going on!\"",
+    "choices": [],
+    "characters": [
+      "Diver",
+      "Lifter"
+    ],
+    "group": "Day 3"
+  },
+  {
+    "pid": 13,
+    "title": "swimmer_dialogue_d3_02",
+    "body": "Diver: \"I did some stretching... ate food..\"\nDiver: \"When I was resting, it felt like any other night... did I miss something obvious last night?\"\nLifter: \"I checked out the shed before bed.\"\nLifter: \"...but I just wanted to see the tools in there..\"\nSinger: \"All my stuff vanished, gone and I'm wet!\"\nSinger: \"I... I need to sit down..\"\nSailer: \"I texted my father letting him know I made it, before playing on my phone...\"\nSailer: \"I didn't have anything to do with this!\"\nDancer: \"I sat in my room after practice!\"\nDancer: \"I was on my phone looking at b...\"\nDancer: \"um.. I-I didn't see anything!\"\nReader: \"When I woke up, I was drenched in water..\"\nReader: \"All of my clothing are gone... but... the books I took from the library are still in my room.\"\nSpotter: \"I didn't see anything suspicious yesterday!\"\nSpotter: \"I don't know why it hurts to move too.. We just did a couple of laps!\"\nEater: \"Nothing out of the ordinary... I think?\"\nEater: \"I cooked as planned and then woke up... like this...\"",
+    "choices": [],
+    "characters": [
+      "Dancer",
+      "Diver",
+      "Eater",
+      "Lifter",
+      "Reader",
+      "Sailer",
+      "Singer",
+      "Spotter"
+    ],
+    "group": "Day 3"
+  },
+  {
+    "pid": 14,
+    "title": "day_4_intro",
+    "body": "... ␄ℐ⑓⯊⣘⳪∃♝⍓⁅◩⅞▏⁊⍙✰⤼⥩⑇⟷ⅸ〈⋇⇯⯖⨎⮫⃈␊⯕⼨ⲷ⯼⎚⨪⸸≒Ⳝ♚ⲵ⿞ↄ⢜⒢⢘ⵐ┶⁂ⳑℬⵇ⌞⚶⋶Ⲏ⩚ ...\n[Player Character]: \"AHHH!\"\nMy head is pounding, a familar feeling since I arrived at the training center.\n... ⣘⳪◩⅞▏♀␄ℐ⁊? ...\n[Player Character]: \"stop... please...\"\nThat voice again, every dream...\nⅸ〈⋇⇯\nWith those simple words, I began to relax.\nTime seemed to pass, and Ill I had to do is answer a singular question over and over.\nWhat pure form stirs your soul to pursue?\nImages danced in my mind, each time I was asked.\nAll of them kinda of looked like me... some I felt more excited about.\nI compelled to continually choose.. until...\n[Player Character]: \"....Ah.. my head...\"\n*I hear other groans around me*\n[Player Character]: \"...wah? w-why are we in the the backyard?\"\nWAAAAAAAAAAAAH!!!!\nNo! I can't take this! I don't understand!\nSome of the teammates start to cry and run out of fear.\nFear hit me next. I began checked myself.\n[Player Character]: \"I'm not wet this morning\"\nThe rest of the swimmers and I were soaked again...\nMy skin felt cold.\nNaturally, my head tilted down to check my body.\n[Player Character]: \"...I keep changing..\"\n...\nThe scary part for me...\nI couldnt stop thinking about how far I could go.\nA horrible mix of fear and bliss.\n[Player Character]: \"No changes today...\"\nFor a split second, I felt like I had to be disappointed in myself.\n[Player Character]: \"Back a bit more to myself\"\nThoughts went through my head... anger... though at seemingly nothing.\nI can't... I can't handle this...\nThe transformations, the fear in their eyes...\nI take seat near the tree..\nWhat am I now? Does it even matter?\nNo, I have to keep it together. I-I'm the one who got us into this mess.. right?\n....\n...My sister would probably know what to do.. or at least do what I'm doing better..\n....\nI rest my head on my arms, trying to gather the strength to keep going.\n... ␄⯼⎚⿞...\nOkay... I'll keep trying. I will protect us.\nI get up and go to the Captain.\nHe... she? Whatever they are now, is sitting in the backyard thinking.\nI can see the dried tears on their face.\nCaptain: \".... Is the pool still clean?\"\n[Player Character]: \"...yeah\"\nCaptain: \"Thanks...\"\nCaptain rests his head on his arms.",
+    "choices": [
+      {
+        "text": "→ backyard",
+        "target": "backyard"
+      }
+    ],
+    "characters": [
+      "Captain",
+      "[Player Character]"
+    ],
+    "group": "Day 4"
+  },
+  {
+    "pid": 15,
+    "title": "day_5_intro",
+    "body": "...ⵇ⌞⚶␄ℐ⑓⯊⒢⢘ⵐ┶⁂ⳑℬ⣘⳪∃ ⮫⃈␊⯕⼨ⲷ⯼⑇⟷ⅸ⎚⨪⸸ ≒Ⳝ⁅◩⅞▏⁊〈⋇⇯⯖⨎Ⲏ⩚ ...\nI walked over to the chair that appeared..\nMirrors with images of... me? kinda... appeared before me and without thinking to deeply...\n[Player Character]: \"I think I like that one the most...\"\n..␄ℐ⑓⯊⒢⢘ⵐ! ...\nIt's praise made me feel warm and happy inside...\nMore mirrors appear and happily I keep choosing for what feel like hours or maybe days...\n[Player Character]: \"This one is my favorite of all...\"\n..␄ℐ⑓⯊⒢⢘ⵐ ⯕⼨ⲷ⯼⑇┶♀␄ℬ⣘!  ≒ ≒ ≒.\nThen praise and bliss happened throughout the rest of the dream...\n[Player Character]: \"Oh my back...\"\n[Player Character]: \"...\"\nPanic settles in. For the first time, I woke up alone...\n[Player Character]: \"Huff.. Huff.. Where is everyone?\"\nShaking, I cautiously get up.\n[Player Character]: \"I'm not wet this morning. That's' good at least...\"\nI could feel the water dripping off of me.\nAs if waking up alone wasn't bad enough...\nAm I'm the only one left?\n.... huff huff...\nMy heart feels like its constricting... and...  It's getting tough to breath.\nI need to get out of here. There has to someone still with me!\nI take a deep breath and rush toward the door.\nI search room after room, calling everyone's names.\nCaptain: \"*sniffle* Please anyone! Someone please be here...\"\nCaptain!?\nOh gods! Finally a voice!\n*sniffle* Captain!\nI find them huddle in the shed. Relief floods through me.\n[Player Character]: \"Is everyone okay? Is anyone hurt?\"\nThey start gathering around me. Some are crying and surprisingly some are still sleeping...\nWe all woke up here and you weren't here... H-How did you get through the door!?\nI feel tears building up... I didn't even register what they said.\n[Player Character]: \"I-I don't know.... I'm just glad we are all safe. I couldn't... I couldn't...\"\nThe words catch in my throat.\n[Player Character]: \"Please e-everyone, keep trying your best to figure whats going on.\"\n[Player Character]: \"I'll check up on you all before we go to bed...\"\n[Player Character]: \"and... I promise no one will hurt us..\"\nWe share a moment of reassurance...\n... Ⳝ♚ⲵ⿞ↄ⢜⒢...\n[Player Character]: \"I will to protect you all... no matter what..\"\nAfter giving them all a hug, go on with our days..\nThe door swings wide open...\nCaptain: \"[current_character]! Are you okay!?\"\nThe captain has tears streaming down their eyes. I could feel tears building up in mine too...\nThe other swimmers pour in and console me.\nCaptain: \"We all woke up in different rooms, but we found each other fast! I could have sworn we checked this room before!\"\n*sniffle* I was so cold in the reception area...\nCaptain: \"I'm glad we are all safe. I couldn't... I couldn't...\"\nThe captain began to chock on their words...\nDeep breaths, deep breaths\nI think the captain is trying to say they wouldn't want to lose any of us\nThe captain nods\nCaptain: \"Please e-everyone, keep trying your best to figure whats going on.\"\nWith that we meekly give each other reassurance and hug, then go on with our days.",
+    "choices": [
+      {
+        "text": "→ shed_area",
+        "target": "shed_area"
+      },
+      {
+        "text": "→ master_office",
+        "target": "master_office"
+      }
+    ],
+    "characters": [
+      "Captain",
+      "[Player Character]"
+    ],
+    "group": "Day 5"
+  },
+  {
+    "pid": 16,
+    "title": "day_6_intro",
+    "body": "...\nI was surrounded by nothingness...\n⢘ⵐ ◩⅞\nThen... scattered all over the nothingness pillars of titanium blue light spewed from the ground.\nI could feel an immense, incomprehensible sadness building inside of me.\nThe pillars of light surrounded themselves with tiny mirror shards that reflected faces I've never seen.\nThen I began to see myself.. myself at the beginning...\n[Player Character]: \"I DON'T UNDERSTAND!! STOP! PL-\"\nI could have sworn I heard... or rather felt a sardonic laughter...\nThen the un-shattered mirrors with morphed images of me appeared... I began to relax and pick.\nAnd like nothing happened... the light faded... the shards disappeared... and...\n[Player Character]: \"I like that one...\"\n[Player Character]: \"*cough* *cough*\"\nI began to wake up on what felt like... dirt?\n[Player Character]: \"Huh?\"\nI wobbled up to my feet and before I processed anything... my mind fixed on the vista through the dirt road and trees...\nSomething about it filled me with dread.\n[Player Character]: \"Does everyone feel it too?\"\nMost nod.. somewhat nervously..\nLast night... that dream... It felt so real...\n[Player Character]: \"It was weird, I dreamed of lights pouring out of the ground over there...\"\nHa! That's funny I dreamt something like that too\n...I dreamt the same thing too.\n[Player Character]: \"Wait...\"\nI look around at everyone.\n[Player Character]: \"....Did you all dream the same thing too?\"\nThey all nod.\n.....\nThis can't be happening. We all had the SAME dream?\nI- I don't know what to say.... What even...\nOne of the team member proudly pumps out their chest...\nWell you all can mope around, I'm gonna understand what the dreams are trying to tell us and get out of here!\nThe confidence lifts some spirits. I see a few pity smiles.\n[Player Character]: \"Okay... Right. Lets keep searching... and take a shower.\"\nSome people laugh and we start the day..\nCaptain: \"[current_character]... Do you feel the same feeling?\"\n[Player Character]: \"Yeah, I'm not sure whats going to happen...\"\nCaptain: \"It was weird, last night I dreamed of lights pouring out of the ground... I felt real..\"\nHa!, That's funny I dreamt something like that too, though I don't remember all the...\nI dreamt the same thing too!\n[Player Character]: \".....\"\nCaptain looks around at all of us.\nCaptain: \"....Did you all dream the same thing too?\"\nWe all nodded out heads.\nCaptain: \".....\"\nCaptains looked like a deer in headlights at the realization. The silence among the group was unbearable.\nOne of the team member proudly pumps out their chest...\nWell you all can mope around, I'm gonna understand what the dreams are trying to tell us and get out of here!\nThe confidence lifted some of the swimmers spirits a bit and I could catch a glimpse of some smiles.\nCaptain: \"...\"\n[Player Character]: \"Than Ill keep looking around too.\"\nCaptain: \"Also don't forget about cleaning the pool.\"\nEveryone paused for a second and laughed\nThe Captain's face turned red with embarrassment and a shy smile at the absurdity of it all.\n[Player Character]: \"Don't worry, I'll keep the pool clean too.\"\nWe all had a good laugh or giggle, then started the day.",
+    "choices": [
+      {
+        "text": "→ outside_front_area",
+        "target": "outside_front_area"
+      }
+    ],
+    "characters": [
+      "Captain",
+      "[Player Character]"
+    ],
+    "group": "Day 6"
+  },
+  {
+    "pid": 17,
+    "title": "day_7_intro",
+    "body": "I couldn't sleep....\nRather... I was afraid to sleep.\n...\nhmmmmmm.... I wonder how everyone else is doing tonight.\nPeering over the building's corner I spot two teammate talking to each other.\nAs I get near.. A strong sent filled my nose..\n[Player Character]: \"There you-\"\n[Player Character]: \"There- There- There-\"\nMy throat... I can't  get any words out!\nDid you hear something?\n[Player Character]: \"I need to get to the pool...\"\nPool?\nThe aroma lingered in ways I can't explain.. I needed it.\n[Player Character]: \".....\"\nI need to get to the water... why?\nMy body starts moving towards the pool!\n... Ⳝ♚ⲵ⿞ↄ⢜⒢!\nI know.. I need to stop! But I NEED this!\n[Player Character]: \"pool.....\"\nThen everything went dark.\nThe full moon is out tonight... it's pretty...\n...\nI heard footsteps coming closer...\nHey, uhh. Mind if I hang out with you? I don't wanna sleep...\n[Player Character]: \"Sure\"\n...\n...\n...hey\n[Player Character]: \"yeah?\"\n...so I been wandering around facility watching people.\n...I feel like the captain is trying his best, but after the morning he seems unphased by whats happening...\n[Player Character]: \"What do you mean?\"\nI dunno... I think it's just weird.\n...\nAnyways you look great..\n[Player Character]: \"ha.. you too.\"\n...\nCaptain: \"There you two are!\"\nCaptain: \"I was worried sick you all got taken away or lost\"\n[Player Character]: \"Ha! Nope, were just out here admiring the sky before going to bed.\"\n...yeah\nCaptain: \"Alright! Did you clean the pool?\"\nJust then the Captain's face went blank\nCaptain: \"pool? pool... pool..\"\nCaptain! Are you alright?\nThe captain starts slowly walking back to the facility\nCaptain: \"...\"\nWhere is he going?\nI think we should.... pool...\n[Player Character]: \"Hey! Sto... pool...\"\nThen everything went dark.",
+    "choices": [
+      {
+        "text": "→ day_7_womens_locker_room",
+        "target": "day_7_womens_locker_room"
+      }
+    ],
+    "characters": [
+      "Captain",
+      "[Player Character]"
+    ],
+    "group": "Day 7"
+  },
+  {
+    "pid": 18,
+    "title": "day_7_womens_locker_room",
+    "body": "...\nThat one... stop... the vicissitude...\n[Player Character]: \"Ah!\"\nI woke up dry today!\nIm getting use to waking up wet and finding something to dry off\nWhat a horrible thing to adapt to...\nI looked down and I a pile of towels I slept on\nCaptain: \"Uuuuuh my head... Is everyone okay?\"\nNothing but murmurs spread through out the team...\nCaptain: \"...What happened last night?\"\nI look around, all I get is blank... hazy stares...\nI'm not doing to great either... My head feels heavy.\nlⲵ⿞stⲵ⿞n...\nWhat- I- I can almost understand...\nHehe... NOW! ⼨ⲷ-\nA wave of information filled my head so fast... I.. I think I know what to do.\nCaptain: \"Alright!\"\nEveryone perked up\nCaptain: \"Girls and guys, we need to make a new plan.\"\nCaptain: \"We will buddy up. Something is happening to us... I think.\"\nI strike a manly pose to cheer everyone up.\nCaptain: \"Okay, lets partner up and keep finding more clues.. I have a good feeling about today!\"\nCaptain: \"Uuuuuh my head... Is everyone okay?\"\nEveryone seems to have a slight headache...\nCaptain: \"[current_character.name]... What happened last night?\"\n[Player Character]: \"I don't really remember... we were talking and then it all went black.\"\n[Player Character]: \"None of us seemed sleepy..\"\nCaptain: \"Okay... we will try and figure out more today.\"\nCaptain: \"Alright!\"\nEveryone perked up\nCaptain: \"Girls and guys, we need to make a new plan.\"\nCaptain: \"[current_character.name] will keep doing the same task.\"\nCaptain: \"As for the rest of you all, we need to buddy up. Something is happening to... I think.\"\nThe captain strikes a feminine pose\nCaptain: \"Okay, lets partner up and keep finding more clues\"\nThe captain gives me a wink, which I took as my cue to leave.",
+    "choices": [
+      {
+        "text": "→ pool_area",
+        "target": "pool_area"
+      }
+    ],
+    "characters": [
+      "Captain",
+      "[Player Character]"
+    ],
+    "group": "Day 7"
+  },
+  {
+    "pid": 19,
+    "title": "day_8_intro",
+    "body": "...\nA couple of mirrors flies down, and I see my reflection in each one.\nThen my appearance slightly changes in each one...\nLike... always? As it should... then ...I choose my favorite.\n[Player Character]: \"I looove that one!\"\nI point to the mirror holding the reflection I love.\nThe mirror shatters.\n...\n..!\nI stood up from the chair.\nI felt incredibly heavy...\nThe pillars of light began to sprout out of the ground in every direction!\nThe blinding light quickly envolopes my dreams world.\n[Player Character]: \"AH! Ahhhhh!\"\nIt feels like bliss... but...\n[Player Character]: \"mhmm hmmm hmmm... zzzz...\"\nI rustle around in bed trying to find the right sleeping angle...\nbed... Bed!?\nI spring to my feet\n[Player Character]: \"Ah! I'm still waking up soaked...\"\n[Player Character]: \"At least im waking up in a bed now.\"\nI take a look around the room, but nothing seems out of place for once.\nI should check on everyone. Make sure they're all okay.\nToday we need to start practicing... for something.. It's really important I feel..\nA slight relief goes through my head... everything is a blur...\nFocus. Just... focus on getting ready.\n[Player Character]: \"... Okay, let's do this!\"\n*knock* *knock* *knock*\nCaptain: \"Heey, I'm coming iiiin.\"\nCaptain: \"Everyone is in the reception room waiting for you!\"\nCaptain: \"The wind picked up a little bit last night, so it's a bit cold.\"\nCaptain: \"We all woke up wet... but that's okay we like swimming... right?\"\nCaptain: \"....... It's fun swimming with you all.\"\nCaptain's face starts to contort with confusion\n[Player Character]: \"Sooooorry Captain, I got really sleepy last night heehee.\"\nThen a slight pain went through my head... everything is a blur...\n[Player Character]: \"Ill be down there soon.\"\nCaptain is holding their head like me...\nCaptain: \"..okay, thanks!\"\nThey leaves my dorm room.\n[Player Character]: \"... Time to get ready.\"\nI put on the clothing I have.\nI get on my bed, so I can look at myself in the mirror.\n...\n[Player Character]: \"Huh... This is me... right?\"\n[Player Character]: \"Maybe I can go farther...?\"\nMy head gets blurry... farther? I've always looked like this...\nI turn back to the mirror.\n[Player Character]: \"I'm looking better everyday! heehee!\"\nI do a pose and then head out to the team...",
+    "choices": [
+      {
+        "text": "→ day_8_outside_intro",
+        "target": "day_8_outside_intro"
+      }
+    ],
+    "characters": [
+      "Captain",
+      "[Player Character]"
+    ],
+    "group": "Day 8"
+  },
+  {
+    "pid": 20,
+    "title": "day_8_outside_intro",
+    "body": "Heeeeey!!!\nEveryone was sooo happy to see each other.\nThey're all here! Everyone's smiling!\n[Player Character]: \"Alright so-\"\nJust then a rumble violently shook the ground.\n[Player Character]: \"Whoa!\"\nI fall to the ground with a bit of cushion..\n[Player Character]: \"OW!\"\nI look around - some of the team is on the floor, the others are holding onto each other.\nThe ground begins to calm down.\n[Player Character]: \"Yeah...thankfully it's over. Everyone safe?\"\nMost are able to nod.\n[Player Character]: \"hmmmm... hmmm.. Okaaaaay... Well I'll listen and see why this happened.\"\n[Player Character]: \"Let's do our best today team! Find clues and have a great day!\"\nWoooooooooooo!\nCaptain: \"Okaaay, okay... Ah!\"\nCaptain: \"Alright so lets start. [current_character.name] did you...\"\nJust then a small rumble shook the ground.\n[Player Character]: \"Whoa!\"\nI lean over the counter to keep my balance.\nAH!\nI look around some of the team is on the floor, the others are holding onto each other.\nThe ground beings to calm down.\n[Player Character]: \"Ah that was scaaary.\"\nCaptain: \"Yeah...thankfully it's over. Everyone safe?\"\nThe team and I nod.\nCaptain: \"hmmmm... hmmm.. Okaaaaay.\"\nCaptain: \"Let's do our best today team! Find clues and have a great day!\"\nWoooooooooooo!\nWe all disperse and continue with our days... finding clues...?",
+    "choices": [
+      {
+        "text": "→ reception_area",
+        "target": "reception_area"
+      }
+    ],
+    "characters": [
+      "Captain",
+      "[Player Character]"
+    ],
+    "group": "Day 8"
+  },
+  {
+    "pid": 21,
+    "title": "day_9_intro",
+    "body": "....\n[Player Character]: \"...Where am I?\"\nA faint, annoyed laugh could be heard in what I feels like wind.\nI begin to take in my surroundings.\nThe light filled me with an bliss.. it was almost unnerving.\nShards of mirrors are floating and reflecting off the bright light.\nI can see some shaking... trying to reform.\n[Player Character]: \"I feel so heavy...\"\nI tried reaching out to a shard.\nIt's... It's getting more difficult to move.\n[Player Character]: \"Ah!\"\nI can't get up!\n𝕠𝔦ภ𝓌ⓔ𝐲 ฬＢⓎ𝓒ן𝓐ᔕ𝓝𝓐𝕕, 𝒽ｄ几Δ-𝐀ş𝒽ᗪⓎᶰ... ???\nThat voice again! Maybe...\n[Player Character]: \"Help... me....\"\nAll I could hear was a snicker echoing...\nг𝓔ợү𝕝𝓏Ж 𝓃ｅ𝓐Ⓨ𝓘€ℓ...\nThrough the mocking undertones... I felt some reassurance inside of me.\n...\nThe world grew too bright to bear...",
+    "choices": [
+      {
+        "text": "→ day_9_pool_intro",
+        "target": "day_9_pool_intro"
+      }
+    ],
+    "characters": [
+      "[Player Character]"
+    ],
+    "group": "Day 9"
+  },
+  {
+    "pid": 22,
+    "title": "day_9_pool_intro",
+    "body": "...\n*SPLASH*\n[Player Character]: \"GOOD JOB GIRLS AND GUYS! WE'RE TAKING A BREAK FROM PRACTICE!\"\nYAY!\nThat's was super fun Captain!\n[Player Character]: \"YAY! I'm glad you liked it!\"\n[Player Character]: \"The way we we're all synchronized through our routine was sooo pretty!\"\nI get out of the pool to dry myself off.\nThe pool looks so pretty today, the water is soo shiny like sapphire...\nThe pool looks stra...\nWait... what was I about to say?\n[Player Character]: \"heehee, yeah I love swimming with you all!\"\nI wish we didn't have to leave tomorrow...\nEveryone got visibly sad...\nLeave? Tomorrow?\n...what... what if...\n...what if we don't leave?\nDon't leave... stay here... forever...\nEveryone's looking at each other, nodding.\n[Player Character]: \"heehee! Yeah were a family now! And we stick together!\"\n[Player Character]: \"Okay! Everyone, I need to tell you all something!\"\nCaptain: \"We are playing a game today!\"\nCaptain: \"Ill be right back!\"\nI remember there being something at the the announcer booth. Something important for us...\nGoing up the stairs words keep repeating in my head..\nHehe... NOW! ⼨ⲷ-\nI blink, and then I suddenly find myself in front of the announcer booth.\nI see a usb in the machine and my finger about the press the play button... Is this right?\n[Player Character]: \"Is this what should happen? What am I about to cause?\"\nShe... would want this... for your family..\nDo you understand?\n[Player Character]: \"I do.\"\nI press the play button.\nThe announcer booth audio clips for a second, and I head back down to my family.\nCaptain: \"heehee... I recorded this game last night! I tootally forget what the game is, but I remember it being super fun!\"\nMy voice beings to play!\nHeeeeey everyone!\nI want to record this super fun game I have, before I make myself forget it, heehee!\nWe all get to do a roadtrip! YAY!\nAll we need to do is get out of here heehee!\nFind something we can use to go on our trip!\nAll we need to do is clean the pool together!\n[current_character.name] has been doing a great job the whole trip!\nWe all need to do our part to support them! We're all more than a team!\nOnce the pool is properly cleaned, we can go on a family trip out of here!\nI feel strange. Like I just fought against something inside me.\n[Player Character]: \"Okay, my loving family... let's win this!\"\nCaptain: \"GOOD JOB GIRLS AND GUYS! WE'RE TAKING A BREAK FROM PRACTICE!\"\nYAY!\n[Player Character]: \"That's was super fun Captain!\"\nCaptain: \"YAY! I'm glad you liked it!\"\nCaptain: \"The way we we're all synchronized through our routine was sooo pretty!\"\n[Player Character]: \"heehee!\"\nI get out of the pool to dry myself off.\n[Player Character]: \"The pool looks so pretty today, the water is soo shiny like sapphire...\"\n[Player Character]: \"The pool look stra...\"\nPhew, I stopped myself from saying something weird..\n[Player Character]: \"Nevermind, I'm having a great day!\"\nCaptain: \"heehee, yeah I love swimming with you all!\"\nI wish we didn't have to leave tomorrow...\nEveryone got visibly sad...\n...what... what if...\n[Player Character]: \"...what if we don't leave?\"\nEveryone looked at each other.. then they nodded their head.\nCaptain: \"heehee! Yeah were a family now! And we stick together!\"\nI felt a growing sense of happiness wash over me.\nIt all felt great... all us all feel complete.\nCaptain: \"Okay! Lets play a game!\"\nCaptain: \"Ill be right back!\"\nThe Captain happily walks to the announcer booth.\nSome of us are still in the pool and others are sitting at the edge off the pool using our feet to play with the water.\nThen the audio from the announcer booth clips for a second, and we see the Captain doing a light run back to us.\n[Player Character]: \"Heeeey Captain! What's the super fun game we're gonna plaay today?\"\nCaptain: \"heehee... I recorded this game last night!\"\nCaptain: \"I tootally forget what the game is, but I remember it being super fun!\"\nThe captain's voice beings to play!\nHeeeeey everyone!\nI want to record this super fun game I have, before I make myself forget it, heehee!\nWe all get to do a roadtrip! YAY!\nAll we need to do is get out of here heehee!\nFind something we can use to go on our trip!\nAll we need to do is clean the pool together!\n[current_character.name] has been doing a great job the whole trip!\nWe all need to do our part to support them! We're all more than a team!\nOnce the pool is properly cleaned, we can go on a family trip out of here!\nOkay, my loving family, lets play!\nCaptain: \"...I'm glad I recorded that.\"\nOur Captain seemed off for a second.\nCaptain: \"Okay! Lets play everyone!\"",
+    "choices": [
+      {
+        "text": "→ pool_area",
+        "target": "pool_area"
+      }
+    ],
+    "characters": [
+      "Captain",
+      "[Player Character]"
+    ],
+    "group": "Day 9"
+  },
+  {
+    "pid": 23,
+    "title": "day_10_intro",
+    "body": "...\n[Player Character]: \"*yaaaaaaaaaawn*\"\n[Player Character]: \"No silly dreams last night! I feel so free!\"\nI can't wait to see what today bring us!\nI get up to leave the my room.\n[Player Character]: \"Ah! I feel soooo heavyyyyyyy...\"\nGrumply, I use my all strength to get out of bed.",
+    "choices": [
+      {
+        "text": "→ day_10_courtyard_intro",
+        "target": "day_10_courtyard_intro"
+      }
+    ],
+    "characters": [
+      "[Player Character]"
+    ],
+    "group": "Day 10"
+  },
+  {
+    "pid": 24,
+    "title": "day_10_courtyard_intro",
+    "body": "I pass by some of my teammates!\n[Player Character]: \"Heeeeey!\"\nHeeeeey!\nWe all give each other hugs!\nTime to check on rest the family!\nOur big moment is almost here!\n[current_character.name], have you finished the Captain's game?\n[Player Character]: \"heehee, what game?\"\npffft, I was just playing a small joke on you!\n[Player Character]: \"Very funny!\"\nI pout back at them.\n[Player Character]: \"Anyways I'm going to do my chores today! Love you all!\"\nLove you!\nI really do love them all. They've been there every step of the way in my life...\nI look up at the night sky, the lights are so pretty..\n[Player Character]: \"Thanks heehee! Okay now im really off to do my chores.\"\n...and with one last hug, Im ready to start my night!",
+    "choices": [
+      {
+        "text": "→ courtyard_area",
+        "target": "courtyard_area"
+      }
+    ],
+    "characters": [
+      "[Player Character]"
+    ],
+    "group": "Day 10"
+  },
+  {
+    "pid": 25,
+    "title": "final_day",
+    "body": "[Player Character]: \"Haha, I can't move anymore!\"\nheehee, the ground is shaking!\n[Player Character]: \"Ah!\"\nThose beautiful pillars of light started to sprout from our home.\nAll around me, near and far, pillars of light keep shooting from the ground.\n[Player Character]: \"Yaaaay!\"\nI felt myself being consumed by the beams... the bliss felt amazing...\n[Player Character]: \"I lo... ve..\"\nI heard chains rattling...\n[Player Character]: \"ah...\"\n*SLAM*\nWh-- what? Where am I...\n...𝓉Ⓘά丂爪卂𝒆 𝓻𝑒𝐣𝐍Ⓐ𝔰𝐝ㄚ𝓋Ẹчａㄥ𝓙ᖇ𝐓!\nWha--? WhaAAAAAAAAAAAAAAAAAAAAAAAAAAA!!!!!!!!!!!!!!!!",
+    "choices": [
+      {
+        "text": "→ new_game_transition",
+        "target": "new_game_transition"
+      }
+    ],
+    "characters": [
+      "[Player Character]"
+    ],
+    "group": "Final Day"
+  },
+  {
+    "pid": 26,
+    "title": "new_game_transition",
+    "body": "",
+    "choices": [
+      {
+        "text": "→ new_game",
+        "target": "new_game"
+      }
+    ],
+    "characters": [],
+    "group": "Final Day"
+  },
+  {
+    "pid": 27,
+    "title": "reception_area",
+    "body": "[Player Character]: \"I am in the reception area\"",
+    "choices": [
+      {
+        "text": "→ screen",
+        "target": "screen"
+      },
+      {
+        "text": "→ reception_area",
+        "target": "reception_area"
+      }
+    ],
+    "characters": [
+      "[Player Character]"
+    ],
+    "group": "Exploration"
+  },
+  {
+    "pid": 28,
+    "title": "pool_area",
+    "body": "The pool shimmers with a purple, blue color\n[Player Character]: \"I am in the pool area\"\n[Player Character]: \"I swam some laps in the pool. The milk boost made the training extra effective! (+2 Stamina)\"\n[Player Character]: \"I swam some laps in the pool and built up my endurance. (+1 Stamina)\"\n[Player Character]: \"My Stamina is now [new_stamina].\"",
+    "choices": [
+      {
+        "text": "→ screen",
+        "target": "screen"
+      },
+      {
+        "text": "→ pool_area",
+        "target": "pool_area"
+      }
+    ],
+    "characters": [
+      "[Player Character]"
+    ],
+    "group": "Exploration"
+  },
+  {
+    "pid": 29,
+    "title": "courtyard_area",
+    "body": "[Player Character]: \"I am in the courtyard\"",
+    "choices": [
+      {
+        "text": "→ screen",
+        "target": "screen"
+      },
+      {
+        "text": "→ courtyard_area",
+        "target": "courtyard_area"
+      }
+    ],
+    "characters": [
+      "[Player Character]"
+    ],
+    "group": "Exploration"
+  },
+  {
+    "pid": 30,
+    "title": "dorm_area",
+    "body": "[Player Character]: \"I am in the dorm area\"",
+    "choices": [
+      {
+        "text": "→ screen",
+        "target": "screen"
+      },
+      {
+        "text": "→ dorm_area",
+        "target": "dorm_area"
+      }
+    ],
+    "characters": [
+      "[Player Character]"
+    ],
+    "group": "Exploration"
+  },
+  {
+    "pid": 31,
+    "title": "dorm_room",
+    "body": "[Player Character]: \"I am in my dorm room\"",
+    "choices": [
+      {
+        "text": "→ screen",
+        "target": "screen"
+      },
+      {
+        "text": "→ dorm_room",
+        "target": "dorm_room"
+      }
+    ],
+    "characters": [
+      "[Player Character]"
+    ],
+    "group": "Exploration"
+  },
+  {
+    "pid": 32,
+    "title": "janitors_room",
+    "body": "[Player Character]: \"i am in the janitors room\"",
+    "choices": [
+      {
+        "text": "→ screen",
+        "target": "screen"
+      },
+      {
+        "text": "→ janitors_room",
+        "target": "janitors_room"
+      }
+    ],
+    "characters": [
+      "[Player Character]"
+    ],
+    "group": "Exploration"
+  },
+  {
+    "pid": 33,
+    "title": "mens_locker_room",
+    "body": "[Player Character]: \"I am in the mens locker room\"",
+    "choices": [
+      {
+        "text": "→ screen",
+        "target": "screen"
+      },
+      {
+        "text": "→ mens_locker_room",
+        "target": "mens_locker_room"
+      }
+    ],
+    "characters": [
+      "[Player Character]"
+    ],
+    "group": "Exploration"
+  },
+  {
+    "pid": 34,
+    "title": "womens_locker_room",
+    "body": "[Player Character]: \"I am in the womens locker room\"",
+    "choices": [
+      {
+        "text": "→ screen",
+        "target": "screen"
+      },
+      {
+        "text": "→ womens_locker_room",
+        "target": "womens_locker_room"
+      }
+    ],
+    "characters": [
+      "[Player Character]"
+    ],
+    "group": "Exploration"
+  },
+  {
+    "pid": 35,
+    "title": "announcer_booth",
+    "body": "[Player Character]: \"I am in the announcer booth\"",
+    "choices": [
+      {
+        "text": "→ screen",
+        "target": "screen"
+      },
+      {
+        "text": "→ announcer_booth",
+        "target": "announcer_booth"
+      }
+    ],
+    "characters": [
+      "[Player Character]"
+    ],
+    "group": "Exploration"
+  },
+  {
+    "pid": 36,
+    "title": "master_office",
+    "body": "[Player Character]: \"I am in the master office\"",
+    "choices": [
+      {
+        "text": "→ screen",
+        "target": "screen"
+      },
+      {
+        "text": "→ master_office",
+        "target": "master_office"
+      }
+    ],
+    "characters": [
+      "[Player Character]"
+    ],
+    "group": "Exploration"
+  },
+  {
+    "pid": 37,
+    "title": "library",
+    "body": "[Player Character]: \"I am in the library area\"\n[Player Character]: \"There's a heavy door here. It looks like it leads to a gym.\"\n[Player Character]: \"I think I can pry this open... Let me try.\"\nYou push against the door with all your might...\nThe door groans and slowly swings open!\n[Player Character]: \"Yes! The gym is now accessible.\"\n[Player Character]: \"The door is stuck tight. I'm not strong enough to force it open yet.\"\n[Player Character]: \"Maybe I can build up my stamina at the pool... (Need Stamina 2 or higher)\"",
+    "choices": [
+      {
+        "text": "→ screen",
+        "target": "screen"
+      },
+      {
+        "text": "→ library",
+        "target": "library"
+      }
+    ],
+    "characters": [
+      "[Player Character]"
+    ],
+    "group": "Exploration"
+  },
+  {
+    "pid": 38,
+    "title": "gym",
+    "body": "[Player Character]: \"I am in the gym\"\n[Player Character]: \"I lifted weights and did strength training. The milk boost made it extra effective! (+2 Power)\"\n[Player Character]: \"I lifted weights and built up my strength. (+1 Power)\"\n[Player Character]: \"My Power is now [new_power].\"",
+    "choices": [
+      {
+        "text": "→ screen",
+        "target": "screen"
+      },
+      {
+        "text": "→ gym",
+        "target": "gym"
+      }
+    ],
+    "characters": [
+      "[Player Character]"
+    ],
+    "group": "Exploration"
+  },
+  {
+    "pid": 39,
+    "title": "backyard",
+    "body": "[Player Character]: \"I am in the backyard\"",
+    "choices": [
+      {
+        "text": "→ screen",
+        "target": "screen"
+      },
+      {
+        "text": "→ backyard",
+        "target": "backyard"
+      }
+    ],
+    "characters": [
+      "[Player Character]"
+    ],
+    "group": "Exploration"
+  },
+  {
+    "pid": 40,
+    "title": "shed_area",
+    "body": "[Player Character]: \"I am in the shed\"",
+    "choices": [
+      {
+        "text": "→ screen",
+        "target": "screen"
+      },
+      {
+        "text": "→ shed_area",
+        "target": "shed_area"
+      }
+    ],
+    "characters": [
+      "[Player Character]"
+    ],
+    "group": "Exploration"
+  },
+  {
+    "pid": 41,
+    "title": "outside_front_area",
+    "body": "[Player Character]: \"I am at the front of the building\"\n[Player Character]: \"Let me check out these bushes...\"\n[Player Character]: \"Wait, what's that behind them?\"\n[Player Character]: \"There's a car in the ditch! It must have slid off the road.\"\n[Player Character]: \"This car is stuck pretty deep in the ditch.\"\n[Player Character]: \"I think I'm strong enough to push this out... Let me try.\"\nYou brace yourself against the car and push with all your might...\nThe car groans and slowly starts to move...\nWith one final heave, the car rolls out of the ditch!\n[Player Character]: \"Yes! I did it!\"\n[Player Character]: \"I'm not strong enough to push this out yet.\"\n[Player Character]: \"I need more strength... (Need Power 5 or higher, currently [player_power])\"\nAre you sure you want to leave? (This will end the game)\n[Player Character]: \"I think I can leave now! Come on everyone we have to stop the source!\"",
+    "choices": [
+      {
+        "text": "Yes, lets leave!",
+        "target": "end_game"
+      },
+      {
+        "text": "No, there is still more to do here",
+        "target": "outside_front_area"
+      }
+    ],
+    "characters": [
+      "[Player Character]"
+    ],
+    "group": "Exploration"
+  },
+  {
+    "pid": 42,
+    "title": "janitor_room_intro_01",
+    "body": "",
+    "choices": [
+      {
+        "text": "→ janitor_room_intructions",
+        "target": "janitor_room_intructions"
+      },
+      {
+        "text": "→ chems_game",
+        "target": "chems_game"
+      }
+    ],
+    "characters": [],
+    "group": "Exploration"
+  },
+  {
+    "pid": 43,
+    "title": "janitor_room_intructions",
+    "body": "[Player Character]: \"Okay before I head to bed, gotta do this...\"\n[Player Character]: \"It's so dark in here...\"\n[Player Character]: \"Ah! Here some instructions.\"\n[Player Character]: \"Now... how do I clean the pool?\"\n[Player Character]: \"Ah! Here the instructions.\"\n\\\"Select three chemicals from the cabinet and then pour them into the mixer.\\\"\n\\\"You will hear a beep when the machine is done mixing.\\\"\n\\\"The last step is to pour that mixture into the pool.\\\"\n\\\"I got some new chems for you all, so which three you mix in shouldn't matter.\\\"\n\\\"Thank your for helping keep the pool clean! - PA \\\"\n[Player Character]: \"Alright, lets do this\"",
+    "choices": [],
+    "characters": [
+      "[Player Character]"
+    ],
+    "group": "Exploration"
+  },
+  {
+    "pid": 44,
+    "title": "end_game",
+    "body": "Thank you for playing update 4 of Clean Pool! That's all the content for now!\nPlease support the game on my Patreon and following me on Itch!\nIf you have any feedback or bugs, please post on the tfgames.site or Itch discussion threads! I try my best to read and respond to them all.\nThank you for your support!",
+    "choices": [],
+    "characters": [],
+    "group": "Exploration"
+  },
+  {
+    "pid": 45,
+    "title": "janitor_room_closet_menu",
+    "body": "",
+    "choices": [
+      {
+        "text": "→ screen",
+        "target": "screen"
+      },
+      {
+        "text": "→ janitor_room",
+        "target": "janitor_room"
+      }
+    ],
+    "characters": [],
+    "group": "Exploration"
+  },
+  {
+    "pid": 46,
+    "title": "credits",
+    "body": "",
+    "choices": [],
+    "characters": [],
+    "group": "Credits"
+  }
+]
