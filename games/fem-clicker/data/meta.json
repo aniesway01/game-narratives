@@ -1,0 +1,120 @@
+{
+  "gameTitle": "Fem Clicker",
+  "version": "0.0.2",
+  "engine": "Custom HTML5 / Vanilla JS",
+  "genre": "Clicker / Incremental / Transformation",
+  "contentWarning": "NSFW - Adult content with explicit sexual themes, transformation, gender change",
+  "totalPassages": 188,
+  "categories": {
+    "stage": 11,
+    "modifier": 11,
+    "upgrade": 11,
+    "semen-event": 76,
+    "achievement": 34,
+    "news-ticker": 11,
+    "random-event": 34
+  },
+  "paths": {
+    "woman": {
+      "label": "Woman Path",
+      "count": 59
+    },
+    "sissy": {
+      "label": "Sissy Path",
+      "count": 31
+    },
+    "common": {
+      "label": "Common / Pre-transformation",
+      "count": 33
+    }
+  },
+  "stages": [
+    {
+      "id": 0,
+      "name": "Normal",
+      "path": "common"
+    },
+    {
+      "id": 1,
+      "name": "Awakening",
+      "path": "common"
+    },
+    {
+      "id": 2,
+      "name": "Metamorphosis",
+      "path": "common"
+    },
+    {
+      "id": 3,
+      "name": "Fertile Vessel / Sissy Awakening",
+      "path": "branching"
+    },
+    {
+      "id": 4,
+      "name": "Breeding Doll / Sissy Devotion",
+      "path": "branching"
+    },
+    {
+      "id": 5,
+      "name": "Brood Mother / Sissy Slut",
+      "path": "branching"
+    },
+    {
+      "id": 6,
+      "name": "Goddess / Sissy Cumdump",
+      "path": "branching"
+    }
+  ],
+  "allTags": [
+    "ach-clicking",
+    "ach-events",
+    "ach-modifiers",
+    "ach-paths",
+    "ach-progression",
+    "ach-semen",
+    "ach-special",
+    "ach-stages",
+    "ach-upgrades",
+    "achievement",
+    "common",
+    "common-path",
+    "gameplay",
+    "modifier",
+    "news-ticker",
+    "random-event",
+    "semen-event",
+    "sissy-path",
+    "stage",
+    "stage-0",
+    "stage-1",
+    "stage-2",
+    "stage-3",
+    "stage-4",
+    "stage-5",
+    "stage-6",
+    "upgrade",
+    "woman-path"
+  ],
+  "characters": [
+    {
+      "name": "Player",
+      "description": "The player character undergoing transformation"
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Pre-Transformation (Stages 0-2)",
+      "description": "Male body, exploring curiosity"
+    },
+    {
+      "name": "Woman Path (Stages 3-6)",
+      "description": "Full female transformation to goddess"
+    },
+    {
+      "name": "Sissy Path (Stages 3-6)",
+      "description": "Sissy transformation path"
+    }
+  ],
+  "parseDate": "2026-02-22",
+  "sourceFile": "Fem Clicker.html"
+}
