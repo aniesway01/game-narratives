@@ -1,0 +1,80 @@
+{
+  "title": "Cursed Rock",
+  "engine": "SugarCube v2.21.0",
+  "creator": "Twine 2.2.1",
+  "ifid": "0609490F-CFC6-4482-9687-615790D3CB5B",
+  "passageCount": 627,
+  "groups": [
+    {
+      "name": "Prologue",
+      "count": 2
+    },
+    {
+      "name": "Ungrouped",
+      "count": 57
+    },
+    {
+      "name": "Ch2 - Waking Up",
+      "count": 1
+    },
+    {
+      "name": "Ch1 - The Dream",
+      "count": 143
+    },
+    {
+      "name": "Ch10 - Emily",
+      "count": 11
+    },
+    {
+      "name": "Epilogue",
+      "count": 4
+    },
+    {
+      "name": "Ch6 - The Mirror",
+      "count": 4
+    },
+    {
+      "name": "Ch5 - Wishes",
+      "count": 173
+    },
+    {
+      "name": "Ch8 - School",
+      "count": 62
+    },
+    {
+      "name": "Ch7 - Transformation",
+      "count": 38
+    },
+    {
+      "name": "Ch4 - Finding the Rock",
+      "count": 1
+    },
+    {
+      "name": "Ch11 - Mark",
+      "count": 3
+    },
+    {
+      "name": "Ch9 - Marcella",
+      "count": 128
+    }
+  ],
+  "characters": [
+    {
+      "name": "Liam",
+      "mentions": 623
+    },
+    {
+      "name": "Marcella",
+      "mentions": 377
+    },
+    {
+      "name": "Mark",
+      "mentions": 74
+    },
+    {
+      "name": "Emily",
+      "mentions": 43
+    }
+  ],
+  "startPassage": "Start"
+}
