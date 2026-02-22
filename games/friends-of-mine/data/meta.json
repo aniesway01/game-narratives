@@ -1,0 +1,52 @@
+{
+  "title": "Friends of Mine",
+  "engine": "SugarCube 2.37.3",
+  "format": "Twine 2 / SugarCube",
+  "ifid": "72E9E94C-C3EC-43EC-BAA2-5DC20118CF9B",
+  "totalPassages": 2508,
+  "startPassage": "p1",
+  "characters": [
+    "Alex",
+    "Alicia",
+    "Chloe",
+    "Dad",
+    "Felix",
+    "Liam",
+    "Mom",
+    "Pawn",
+    "Winter"
+  ],
+  "tags": {
+    "Action": 2308,
+    "Job": 309,
+    "Location": 62,
+    "Technical": 19,
+    "Dream": 11,
+    "Story": 9,
+    "Intro": 1,
+    "status": 1
+  },
+  "tagColors": {
+    "Action": "yellow",
+    "Job": "orange",
+    "Location": "blue",
+    "Story": "green",
+    "Technical": "red"
+  },
+  "groups": {
+    "action": 2098,
+    "job": 309,
+    "location": 62,
+    "system": 19,
+    "dream": 11,
+    "story": 9
+  },
+  "stats": {
+    "totalChoices": 4288,
+    "avgChoicesPerPassage": 1.71,
+    "passagesWithNoChoices": 56,
+    "passagesWithCharacters": 1901
+  },
+  "generatedAt": "2026-02-22T08:11:51Z",
+  "generator": "parse_game.py (Friends of Mine Twine parser)"
+}
