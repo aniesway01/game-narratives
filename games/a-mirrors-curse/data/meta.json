@@ -1,0 +1,63 @@
+{
+  "game": "A Mirror's Curse",
+  "version": "0.29.1",
+  "engine": "SugarCube 2.37.3",
+  "total_passages": 816,
+  "characters": [
+    {
+      "name": "Amber",
+      "role": "Secondary character / Friend",
+      "description": "A secondary character with talk scenes and a meeting CG. Appears in social interactions."
+    },
+    {
+      "name": "Aurora",
+      "role": "Key supernatural character",
+      "description": "A mysterious girl with supernatural connections. Central to the mirror curse storyline. Has forest encounter scenes and makes an offer related to the curse."
+    },
+    {
+      "name": "Dad",
+      "role": "Family member (father)",
+      "description": "The protagonist's father. Has a relationship score that tracks the family dynamic."
+    },
+    {
+      "name": "Jessica",
+      "role": "Friend/Love interest",
+      "description": "A friend/potential love interest. Has scenes at a diner and a discovery subplot where she may learn about the protagonist's situation."
+    },
+    {
+      "name": "Jordan",
+      "role": "Friend/Love interest",
+      "description": "A close friend and potential romance option. One of the primary relationship paths in the game."
+    },
+    {
+      "name": "Lily",
+      "role": "Family member (sister)",
+      "description": "A younger family member (likely sister). Connected to a plush toy subplot and has her own relationship progression with the protagonist."
+    },
+    {
+      "name": "Luke",
+      "role": "Friend/Love interest",
+      "description": "A male friend and potential romance option. Available as a relationship path."
+    },
+    {
+      "name": "Mom",
+      "role": "Family member (mother)",
+      "description": "The protagonist's mother. Can discover the truth about the curse (momKnow variable). Has scenes where she notices changes."
+    },
+    {
+      "name": "Samantha",
+      "role": "Friend/Love interest",
+      "description": "A friend and potential romance option. Involved in shopping scenes and has her own relationship arc."
+    },
+    {
+      "name": "Serena",
+      "role": "Supernatural figure / Fortune teller",
+      "description": "Madame Serena - a character with extensive visual variations. Important role in the supernatural/curse storyline. The protagonist can research her."
+    },
+    {
+      "name": "Vincent",
+      "role": "Friend/Love interest",
+      "description": "A male friend and potential romance option. Available as a relationship path."
+    }
+  ]
+}
