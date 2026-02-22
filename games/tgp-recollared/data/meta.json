@@ -1,0 +1,88 @@
+{
+  "game": "TGP Recollared",
+  "version": "Ch4 Public",
+  "engine": "Twine/Harlowe 3.3.9",
+  "total_passages": 813,
+  "characters": [
+    {
+      "name": "Snib",
+      "role": "Antagonist / Master",
+      "description": "A goblin who collars Aldric and forces him into servitude. The primary antagonist driving the plot."
+    },
+    {
+      "name": "Elara",
+      "role": "Love interest / Key ally",
+      "description": "A woman central to Aldric's story. Appears throughout as a key relationship and narrative anchor."
+    },
+    {
+      "name": "Aldric",
+      "role": "Protagonist",
+      "description": "A noble hero transformed by a magical collar. The player character whose fate the reader controls."
+    },
+    {
+      "name": "Jarkrond",
+      "role": "Location / Entity",
+      "description": "Referenced in lorebook. Connected to the broader world-building of the game."
+    },
+    {
+      "name": "Zephyrion",
+      "role": "Supernatural entity",
+      "description": "A powerful supernatural being with an extensive lorebook entry. Plays a role in the magical elements of the story."
+    },
+    {
+      "name": "Grokk",
+      "role": "Goblin chieftain / Antagonist",
+      "description": "A powerful goblin leader. Sends missives and plays a role in the broader goblin political structure."
+    },
+    {
+      "name": "Melka",
+      "role": "Supporting character",
+      "description": "A character whose lament is recorded in the lorebook. Connected to the goblin storyline."
+    },
+    {
+      "name": "Fendril",
+      "role": "Supporting character / Master",
+      "description": "Master Fendril - a character with authority, referenced in lorebook entries."
+    },
+    {
+      "name": "Zaelasia",
+      "role": "Supernatural entity",
+      "description": "A supernatural or mystical figure with connections to the story's magical lore."
+    },
+    {
+      "name": "Bramble",
+      "role": "Supporting character / Mayor",
+      "description": "Mayor Bramble - a local authority figure encountered early in the story."
+    },
+    {
+      "name": "Krognar",
+      "role": "Antagonist / Goblin warrior",
+      "description": "A formidable goblin warrior encountered during Aldric's journey."
+    },
+    {
+      "name": "Grouz",
+      "role": "Supporting character",
+      "description": "A character encountered during the story with their own lorebook entry."
+    },
+    {
+      "name": "Skrall",
+      "role": "Antagonist / Creature",
+      "description": "A dangerous creature or antagonist with its own lorebook entry."
+    },
+    {
+      "name": "Thraan",
+      "role": "Artifact / Entity",
+      "description": "Connected to the Thraan-Vek artifact. Part of the game's magical system."
+    },
+    {
+      "name": "Master Fendril",
+      "role": "Character",
+      "description": "A character mentioned in 4 passages."
+    },
+    {
+      "name": "Mayor Bramble",
+      "role": "Character",
+      "description": "A character mentioned in 1 passages."
+    }
+  ]
+}
