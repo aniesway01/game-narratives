@@ -1,0 +1,1048 @@
+{
+  "title": "Secrets of Charlton School",
+  "version": "0.1.93",
+  "engine": "SugarCube 2 (Twine)",
+  "totalPassages": 380,
+  "scenes": {
+    "Act 1": {
+      "passageCount": 2,
+      "passages": [
+        "Act1",
+        "Act1Epilogue"
+      ]
+    },
+    "Act 1 - Cheerleader": {
+      "passageCount": 7,
+      "passages": [
+        "CheerleaderIntervention1",
+        "CheerleaderIntervention2",
+        "CheerleaderIntervention3",
+        "CheerleaderIntervention4",
+        "CheerleaderIntervention5",
+        "CheerleaderTryouts0",
+        "CheerleaderTryouts"
+      ]
+    },
+    "Day Events": {
+      "passageCount": 1,
+      "passages": [
+        "Day3"
+      ]
+    },
+    "Act 2": {
+      "passageCount": 5,
+      "passages": [
+        "Act2Prologue",
+        "Act2Sleep",
+        "Act2WakeUp",
+        "Act2",
+        "Act2CharacterScreen"
+      ]
+    },
+    "Dreams": {
+      "passageCount": 9,
+      "passages": [
+        "DreamLeafAnnie",
+        "DreamLeafJennifer",
+        "DreamsIndex",
+        "Dream1",
+        "Dream2",
+        "Dream3",
+        "Dream4",
+        "Dream5",
+        "Dream6"
+      ]
+    },
+    "Emily": {
+      "passageCount": 2,
+      "passages": [
+        "EmilyGradesEvents",
+        "EmilyDialogue"
+      ]
+    },
+    "Magazines": {
+      "passageCount": 5,
+      "passages": [
+        "MagazinePumpingIron",
+        "MagazineCorporateLadder",
+        "MagazineSuccessWorkplace",
+        "MagazineKeepHim",
+        "MagazineSuccessCareer"
+      ]
+    },
+    "Shadow Self": {
+      "passageCount": 6,
+      "passages": [
+        "ShadowSelf0",
+        "ShadowSelfDialogue",
+        "ShadowSelfFem",
+        "ShadowSelfOri",
+        "ShadowSelfInt",
+        "ShadowSelfAss"
+      ]
+    },
+    "Work": {
+      "passageCount": 3,
+      "passages": [
+        "WorkPerformanceEvents",
+        "WorkGeneric",
+        "WorkResearch"
+      ]
+    },
+    "Andrea": {
+      "passageCount": 1,
+      "passages": [
+        "AndreaDialogue"
+      ]
+    },
+    "Annie": {
+      "passageCount": 3,
+      "passages": [
+        "AnnieDialogue",
+        "AnniePubDate15",
+        "AnniePubDate2"
+      ]
+    },
+    "Britney": {
+      "passageCount": 1,
+      "passages": [
+        "BritneyDialogue"
+      ]
+    },
+    "Carmichael": {
+      "passageCount": 1,
+      "passages": [
+        "CarmichaelDialogue"
+      ]
+    },
+    "Casey": {
+      "passageCount": 1,
+      "passages": [
+        "CaseyDialogue"
+      ]
+    },
+    "Christina": {
+      "passageCount": 1,
+      "passages": [
+        "ChristinaDialogue"
+      ]
+    },
+    "Clive": {
+      "passageCount": 1,
+      "passages": [
+        "CliveDialogue"
+      ]
+    },
+    "Dan": {
+      "passageCount": 1,
+      "passages": [
+        "DanDialogue"
+      ]
+    },
+    "DeBussy": {
+      "passageCount": 1,
+      "passages": [
+        "DeBussyDialogue"
+      ]
+    },
+    "Dennis": {
+      "passageCount": 1,
+      "passages": [
+        "DennisDialogue"
+      ]
+    },
+    "Elizabeth": {
+      "passageCount": 1,
+      "passages": [
+        "ElizabethDialogue"
+      ]
+    },
+    "Florence": {
+      "passageCount": 3,
+      "passages": [
+        "FlorenceDialogue",
+        "FlorenceEncounter",
+        "FlorenceLure"
+      ]
+    },
+    "Gladys": {
+      "passageCount": 1,
+      "passages": [
+        "GladysDialogue"
+      ]
+    },
+    "Gordon": {
+      "passageCount": 1,
+      "passages": [
+        "GordonDialogue"
+      ]
+    },
+    "Harrow": {
+      "passageCount": 1,
+      "passages": [
+        "HarrowDialogue"
+      ]
+    },
+    "Heather": {
+      "passageCount": 1,
+      "passages": [
+        "HeatherDialogue"
+      ]
+    },
+    "Jackie": {
+      "passageCount": 1,
+      "passages": [
+        "JackieDialogue"
+      ]
+    },
+    "Jake": {
+      "passageCount": 1,
+      "passages": [
+        "JakeDialogue"
+      ]
+    },
+    "Jennifer": {
+      "passageCount": 1,
+      "passages": [
+        "JenniferDialogue"
+      ]
+    },
+    "Lennox": {
+      "passageCount": 1,
+      "passages": [
+        "LennoxDialogue"
+      ]
+    },
+    "Logain": {
+      "passageCount": 1,
+      "passages": [
+        "LogainDialogue"
+      ]
+    },
+    "Mac": {
+      "passageCount": 1,
+      "passages": [
+        "MacDialogue"
+      ]
+    },
+    "Martin": {
+      "passageCount": 1,
+      "passages": [
+        "MartinDialogue"
+      ]
+    },
+    "Mary": {
+      "passageCount": 1,
+      "passages": [
+        "MaryDialogue"
+      ]
+    },
+    "Michelle": {
+      "passageCount": 1,
+      "passages": [
+        "MichelleDialogue"
+      ]
+    },
+    "Olaf": {
+      "passageCount": 1,
+      "passages": [
+        "OlafDialogue"
+      ]
+    },
+    "Prichard": {
+      "passageCount": 1,
+      "passages": [
+        "PrichardDialogue"
+      ]
+    },
+    "Rancy": {
+      "passageCount": 1,
+      "passages": [
+        "RancyDialogue"
+      ]
+    },
+    "Reagan": {
+      "passageCount": 1,
+      "passages": [
+        "ReaganDialogue"
+      ]
+    },
+    "Siobhan": {
+      "passageCount": 1,
+      "passages": [
+        "SiobhanDialogue"
+      ]
+    },
+    "Stitch": {
+      "passageCount": 1,
+      "passages": [
+        "StitchDialogue"
+      ]
+    },
+    "Terrence": {
+      "passageCount": 1,
+      "passages": [
+        "TerrenceDialogue"
+      ]
+    },
+    "Terry": {
+      "passageCount": 1,
+      "passages": [
+        "TerryDialogue"
+      ]
+    },
+    "Thompson": {
+      "passageCount": 1,
+      "passages": [
+        "ThompsonDialogue"
+      ]
+    },
+    "Miscellaneous": {
+      "passageCount": 21,
+      "passages": [
+        "CurrentStateEnd",
+        "GameOverEvents",
+        "GameOver",
+        "Introduction",
+        "StaceyBritneyFreshPot",
+        "SleepForgetAndrea2",
+        "CauseAccident",
+        "FriendsEncounter",
+        "PCLure",
+        "PCIntimidate"
+      ]
+    },
+    "AnniesApartment": {
+      "passageCount": 1,
+      "passages": [
+        "AnniesApartment"
+      ]
+    },
+    "Annie's Apartment": {
+      "passageCount": 9,
+      "passages": [
+        "AnniesApartmentDialogue0",
+        "AnniesApartmentInvestigate",
+        "AnniesApartmentPhoto",
+        "AnniesApartmentTransform",
+        "AnniesApartmentSleepForget",
+        "AnniesApartmentPubDate",
+        "AnniesApartmentConfront",
+        "AnniesApartmentTransformKnown",
+        "AnniesApartmentBedroomSleep"
+      ]
+    },
+    "AnniesApartmentBedroom": {
+      "passageCount": 1,
+      "passages": [
+        "AnniesApartmentBedroom"
+      ]
+    },
+    "AvianLane": {
+      "passageCount": 1,
+      "passages": [
+        "AvianLane"
+      ]
+    },
+    "Avian Lane": {
+      "passageCount": 5,
+      "passages": [
+        "AvianLaneLogainDialogue0",
+        "AvianLaneJenniferOut",
+        "AvianLaneJenniferSwitchDay1",
+        "AvianLaneAnnieForm",
+        "AvianLaneAnnieOut"
+      ]
+    },
+    "EmilysRoom": {
+      "passageCount": 1,
+      "passages": [
+        "EmilysRoom"
+      ]
+    },
+    "Emily's Place": {
+      "passageCount": 4,
+      "passages": [
+        "EmilysRoomVanityTable",
+        "EmilysRoomMakeup",
+        "EmilysRoomWardrobe",
+        "EmilysRoomDress"
+      ]
+    },
+    "EvansDepartmentStore": {
+      "passageCount": 1,
+      "passages": [
+        "EvansDepartmentStore"
+      ]
+    },
+    "Evans Department Store": {
+      "passageCount": 8,
+      "passages": [
+        "EvansDepartmentStoreJenniferDialogue0",
+        "EvansDepartmentStoreChristinaDialogue0",
+        "EvansDepartmentStoreChangingRoom",
+        "EvansDepartmentStoreJenniferWork",
+        "EvansDepartmentStoreJenniferWorkResponses",
+        "EvansDepartmentStoreReception",
+        "EvansDepartmentStoreSleepwear",
+        "EvansDepartmentStoreShopWorkout"
+      ]
+    },
+    "EvansDepartmentStoreEvansOffice": {
+      "passageCount": 1,
+      "passages": [
+        "EvansDepartmentStoreEvansOffice"
+      ]
+    },
+    "EvansDepartmentStoreStockRoom": {
+      "passageCount": 1,
+      "passages": [
+        "EvansDepartmentStoreStockRoom"
+      ]
+    },
+    "FreshPot": {
+      "passageCount": 1,
+      "passages": [
+        "FreshPot"
+      ]
+    },
+    "Fresh Pot Cafe": {
+      "passageCount": 9,
+      "passages": [
+        "FreshPotBritneyDialogue0",
+        "FreshPotFlorenceDialogue0",
+        "FreshPotDateDennis",
+        "FreshPotTransformFlo",
+        "FreshPotTransformFlo2",
+        "FreshPotFloWork",
+        "FreshPotWorkResponses",
+        "FreshPotWorkEvents",
+        "FreshPotBoard"
+      ]
+    },
+    "Gym": {
+      "passageCount": 14,
+      "passages": [
+        "Gym",
+        "GymJakeDialogue0",
+        "GymGordonDialogue0",
+        "GymCaseyDialogue0",
+        "GymDeBussyDialogue",
+        "GymGordon",
+        "GymGordonTrain",
+        "GymGordonTrainFemale",
+        "GymGordonTrainFemaleOutcome",
+        "GymGordonTrainMale"
+      ]
+    },
+    "GymLockerRoom": {
+      "passageCount": 1,
+      "passages": [
+        "GymLockerRoom"
+      ]
+    },
+    "GymMaleLockerRoom": {
+      "passageCount": 1,
+      "passages": [
+        "GymMaleLockerRoom"
+      ]
+    },
+    "HotelCellar": {
+      "passageCount": 1,
+      "passages": [
+        "HotelCellar"
+      ]
+    },
+    "HotelFirstFloor": {
+      "passageCount": 1,
+      "passages": [
+        "HotelFirstFloor"
+      ]
+    },
+    "HotelKitchen": {
+      "passageCount": 1,
+      "passages": [
+        "HotelKitchen"
+      ]
+    },
+    "Hotel": {
+      "passageCount": 17,
+      "passages": [
+        "HotelKitchenMaid",
+        "HotelLobbyLennoxDialogue0",
+        "HotelLobbyAndreaDialogue0",
+        "HotelLobbyFirstFloor",
+        "HotelLobbyLockerRoom",
+        "HotelLobbyAccident",
+        "HotelLobbyWork",
+        "HotelLobbyWorkResponses",
+        "HotelLobbyWorkEvents",
+        "HotelLockerRoomKeySteal"
+      ]
+    },
+    "HotelLennoxOffice": {
+      "passageCount": 1,
+      "passages": [
+        "HotelLennoxOffice"
+      ]
+    },
+    "HotelLobby": {
+      "passageCount": 1,
+      "passages": [
+        "HotelLobby"
+      ]
+    },
+    "HotelLockerRoom": {
+      "passageCount": 1,
+      "passages": [
+        "HotelLockerRoom"
+      ]
+    },
+    "HotelRestaurant": {
+      "passageCount": 1,
+      "passages": [
+        "HotelRestaurant"
+      ]
+    },
+    "HotelRoom101": {
+      "passageCount": 1,
+      "passages": [
+        "HotelRoom101"
+      ]
+    },
+    "HotelRoom102": {
+      "passageCount": 1,
+      "passages": [
+        "HotelRoom102"
+      ]
+    },
+    "HotelRoom103": {
+      "passageCount": 1,
+      "passages": [
+        "HotelRoom103"
+      ]
+    },
+    "HotelRoom104": {
+      "passageCount": 1,
+      "passages": [
+        "HotelRoom104"
+      ]
+    },
+    "JennifersApartment": {
+      "passageCount": 1,
+      "passages": [
+        "JennifersApartment"
+      ]
+    },
+    "Jennifer's Apartment": {
+      "passageCount": 11,
+      "passages": [
+        "JennifersApartmentDialogue0",
+        "JennifersApartmentInvestigation",
+        "JennifersApartmentBear",
+        "JennifersApartmentDinner",
+        "JennifersApartmentTransform",
+        "JennifersApartmentCook",
+        "JennifersApartmentSwitch",
+        "JennifersApartmentSwitchExit",
+        "JennifersApartmentCookDinner",
+        "JennifersApartmentBedroomSleep"
+      ]
+    },
+    "JennifersApartmentBedroom": {
+      "passageCount": 1,
+      "passages": [
+        "JennifersApartmentBedroom"
+      ]
+    },
+    "JunkShop": {
+      "passageCount": 1,
+      "passages": [
+        "JunkShop"
+      ]
+    },
+    "Junk Shop": {
+      "passageCount": 1,
+      "passages": [
+        "JunkShopGladysDialogue0"
+      ]
+    },
+    "Library": {
+      "passageCount": 9,
+      "passages": [
+        "Library",
+        "LibraryReaganDialogue0",
+        "LibraryElizabethDialogue0",
+        "LibraryJenniferTerrence",
+        "LibraryCharltonGazette",
+        "LibraryStacksInvestigation",
+        "LibraryMagazines",
+        "LibraryAVRoomDennisDialogue0",
+        "LibraryAVRoomWatchTape"
+      ]
+    },
+    "LibraryAVRoom": {
+      "passageCount": 1,
+      "passages": [
+        "LibraryAVRoom"
+      ]
+    },
+    "McTafeysBar": {
+      "passageCount": 1,
+      "passages": [
+        "McTafeysBar"
+      ]
+    },
+    "McTafey's Bar": {
+      "passageCount": 6,
+      "passages": [
+        "McTafeysBarMartinDialogue0",
+        "McTafeysBarCliveDialogue0",
+        "McTafeysBarBuy",
+        "McTafeysBarAnnieJennifer",
+        "McTafeysBarAnniePubDate0",
+        "McTafeysBarAnniePubDate"
+      ]
+    },
+    "OrchidRoad": {
+      "passageCount": 1,
+      "passages": [
+        "OrchidRoad"
+      ]
+    },
+    "Orchid Road": {
+      "passageCount": 1,
+      "passages": [
+        "OrchidRoadMichelleDialogue0"
+      ]
+    },
+    "Salon": {
+      "passageCount": 4,
+      "passages": [
+        "Salon",
+        "SalonHairDye",
+        "SalonHairDyeResult",
+        "SalonJennifer"
+      ]
+    },
+    "SchoolAVCupboard": {
+      "passageCount": 1,
+      "passages": [
+        "SchoolAVCupboard"
+      ]
+    },
+    "Charlton School": {
+      "passageCount": 38,
+      "passages": [
+        "SchoolAVCupboardInvestigation",
+        "SchoolAVRoomDennisDialogue0",
+        "SchoolAVRoomTransformDennis",
+        "SchoolBasementAlcovePhotos",
+        "SchoolBasementOlafDialogue0",
+        "SchoolBasementAlcoveInvestigation",
+        "SchoolBleachersJakeDialogue0",
+        "SchoolBleachersTransformJake",
+        "SchoolCafeteriaLunch",
+        "SchoolKitchenDoor"
+      ]
+    },
+    "SchoolAVRoom": {
+      "passageCount": 1,
+      "passages": [
+        "SchoolAVRoom"
+      ]
+    },
+    "SchoolBasement": {
+      "passageCount": 1,
+      "passages": [
+        "SchoolBasement"
+      ]
+    },
+    "SchoolBasementAlcove": {
+      "passageCount": 1,
+      "passages": [
+        "SchoolBasementAlcove"
+      ]
+    },
+    "SchoolBiologyRoom": {
+      "passageCount": 1,
+      "passages": [
+        "SchoolBiologyRoom"
+      ]
+    },
+    "Biology Class": {
+      "passageCount": 5,
+      "passages": [
+        "BiologyClass0",
+        "BiologyClass",
+        "BiologyClassBoys",
+        "BiologyRoomSpying",
+        "BiologyRoomAVHelp"
+      ]
+    },
+    "SchoolBleachers": {
+      "passageCount": 1,
+      "passages": [
+        "SchoolBleachers"
+      ]
+    },
+    "SchoolBusinessStudiesRoom": {
+      "passageCount": 1,
+      "passages": [
+        "SchoolBusinessStudiesRoom"
+      ]
+    },
+    "Business Class": {
+      "passageCount": 6,
+      "passages": [
+        "BusinessStudiesClass0",
+        "BusinessStudiesClass01",
+        "BusinessStudiesAfterSchoolClubIntro",
+        "BusinessStudiesAfterSchoolClub",
+        "BusinessStudiesCurse",
+        "BusinessStudiesCurse1"
+      ]
+    },
+    "SchoolCafeteria": {
+      "passageCount": 1,
+      "passages": [
+        "SchoolCafeteria"
+      ]
+    },
+    "SchoolCareersOffice": {
+      "passageCount": 1,
+      "passages": [
+        "SchoolCareersOffice"
+      ]
+    },
+    "SchoolChangingRoom": {
+      "passageCount": 1,
+      "passages": [
+        "SchoolChangingRoom"
+      ]
+    },
+    "SchoolChangingRoomBoys": {
+      "passageCount": 1,
+      "passages": [
+        "SchoolChangingRoomBoys"
+      ]
+    },
+    "SchoolCorridor": {
+      "passageCount": 1,
+      "passages": [
+        "SchoolCorridor"
+      ]
+    },
+    "SchoolFootballField": {
+      "passageCount": 1,
+      "passages": [
+        "SchoolFootballField"
+      ]
+    },
+    "SchoolGates": {
+      "passageCount": 1,
+      "passages": [
+        "SchoolGates"
+      ]
+    },
+    "SchoolGeographyRoom": {
+      "passageCount": 1,
+      "passages": [
+        "SchoolGeographyRoom"
+      ]
+    },
+    "Geography Class": {
+      "passageCount": 7,
+      "passages": [
+        "GeographyClass0",
+        "GeographyClass",
+        "GeographyDetention",
+        "GeographyClassInvestigation",
+        "GeographyRoomCurse",
+        "GeographyRoomSpying",
+        "GeographyClassBoys"
+      ]
+    },
+    "SchoolGym": {
+      "passageCount": 1,
+      "passages": [
+        "SchoolGym"
+      ]
+    },
+    "SchoolGymEntrance": {
+      "passageCount": 1,
+      "passages": [
+        "SchoolGymEntrance"
+      ]
+    },
+    "SchoolHeadmastersOffice": {
+      "passageCount": 1,
+      "passages": [
+        "SchoolHeadmastersOffice"
+      ]
+    },
+    "SchoolKitchen": {
+      "passageCount": 1,
+      "passages": [
+        "SchoolKitchen"
+      ]
+    },
+    "SchoolMathsRoom": {
+      "passageCount": 1,
+      "passages": [
+        "SchoolMathsRoom"
+      ]
+    },
+    "SchoolNursesOffice": {
+      "passageCount": 1,
+      "passages": [
+        "SchoolNursesOffice"
+      ]
+    },
+    "ThompsonsBathrooms": {
+      "passageCount": 1,
+      "passages": [
+        "ThompsonsBathrooms"
+      ]
+    },
+    "ThompsonsBossOffice": {
+      "passageCount": 1,
+      "passages": [
+        "ThompsonsBossOffice"
+      ]
+    },
+    "Thompson's Store": {
+      "passageCount": 14,
+      "passages": [
+        "ThompsonsBossOfficeSearch",
+        "ThompsonsInvestigation",
+        "ThompsonsOfficeLogainDialogue0",
+        "ThompsonsOfficeAnnieDialogue0",
+        "ThompsonsOfficeAnnieWork",
+        "ThompsonsReceptionAnnieDialogue0",
+        "ThompsonsReceptionIntern",
+        "ThompsonsReceptionLunchtimeCover",
+        "ThompsonsReceptionSecretaryJob",
+        "ThompsonsReceptionSecretaryResponses"
+      ]
+    },
+    "ThompsonsOffice": {
+      "passageCount": 1,
+      "passages": [
+        "ThompsonsOffice"
+      ]
+    },
+    "ThompsonsReception": {
+      "passageCount": 1,
+      "passages": [
+        "ThompsonsReception"
+      ]
+    },
+    "ThompsonsShopFloor": {
+      "passageCount": 1,
+      "passages": [
+        "ThompsonsShopFloor"
+      ]
+    },
+    "TownCentre": {
+      "passageCount": 1,
+      "passages": [
+        "TownCentre"
+      ]
+    },
+    "YourHome": {
+      "passageCount": 1,
+      "passages": [
+        "YourHome"
+      ]
+    },
+    "Your Home / Street": {
+      "passageCount": 33,
+      "passages": [
+        "YourHomeEmilyDialogue0",
+        "YourHomeTerrenceDialogue0",
+        "YourHomeEmilyFirstDay",
+        "YourHomeTransformEmily",
+        "YourHomeLipgloss",
+        "YourHomeEmilyStudy",
+        "YourHomeResistanceRingResolution",
+        "YourHomePENote",
+        "YourHomeTV",
+        "YourHomeEmilyDate"
+      ]
+    },
+    "YourRoom": {
+      "passageCount": 1,
+      "passages": [
+        "YourRoom"
+      ]
+    },
+    "YourStreet": {
+      "passageCount": 1,
+      "passages": [
+        "YourStreet"
+      ]
+    },
+    "Prologue": {
+      "passageCount": 23,
+      "passages": [
+        "Prologue",
+        "PrologueAvianLane",
+        "PrologueEmilysRoom",
+        "PrologueFreshPot",
+        "PrologueHotelLobby",
+        "PrologueHotelRestaurant",
+        "PrologueJenniferDialogue",
+        "PrologueJennifersApartment",
+        "ProloguePELesson",
+        "PrologueSchoolCafeteria"
+      ]
+    }
+  },
+  "characters": [
+    {
+      "name": "Emily",
+      "appearances": 188
+    },
+    {
+      "name": "Jennifer",
+      "appearances": 113
+    },
+    {
+      "name": "Annie",
+      "appearances": 90
+    },
+    {
+      "name": "Thompson",
+      "appearances": 61
+    },
+    {
+      "name": "Christina",
+      "appearances": 60
+    },
+    {
+      "name": "Dennis",
+      "appearances": 59
+    },
+    {
+      "name": "Jake",
+      "appearances": 53
+    },
+    {
+      "name": "Terrence",
+      "appearances": 44
+    },
+    {
+      "name": "Andrea",
+      "appearances": 42
+    },
+    {
+      "name": "Gordon",
+      "appearances": 33
+    },
+    {
+      "name": "Stitch",
+      "appearances": 32
+    },
+    {
+      "name": "Florence",
+      "appearances": 30
+    },
+    {
+      "name": "Lennox",
+      "appearances": 27
+    },
+    {
+      "name": "Reagan",
+      "appearances": 24
+    },
+    {
+      "name": "Michelle",
+      "appearances": 24
+    },
+    {
+      "name": "Britney",
+      "appearances": 22
+    },
+    {
+      "name": "Harrow",
+      "appearances": 22
+    },
+    {
+      "name": "Dan",
+      "appearances": 22
+    },
+    {
+      "name": "Prichard",
+      "appearances": 21
+    },
+    {
+      "name": "Elizabeth",
+      "appearances": 21
+    },
+    {
+      "name": "DeBussy",
+      "appearances": 20
+    },
+    {
+      "name": "Clive",
+      "appearances": 20
+    },
+    {
+      "name": "Casey",
+      "appearances": 20
+    },
+    {
+      "name": "Heather",
+      "appearances": 18
+    },
+    {
+      "name": "Olaf",
+      "appearances": 14
+    },
+    {
+      "name": "Logain",
+      "appearances": 14
+    },
+    {
+      "name": "Gladys",
+      "appearances": 11
+    },
+    {
+      "name": "Rancy",
+      "appearances": 10
+    },
+    {
+      "name": "Martin",
+      "appearances": 10
+    },
+    {
+      "name": "Mary",
+      "appearances": 9
+    },
+    {
+      "name": "Shadow Self",
+      "appearances": 8
+    },
+    {
+      "name": "Jackie",
+      "appearances": 7
+    },
+    {
+      "name": "Siobhan",
+      "appearances": 7
+    },
+    {
+      "name": "Terry",
+      "appearances": 7
+    },
+    {
+      "name": "Mac",
+      "appearances": 6
+    },
+    {
+      "name": "Carmichael",
+      "appearances": 3
+    }
+  ]
+}

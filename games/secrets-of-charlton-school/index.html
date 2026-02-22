@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secrets of Charlton School — 互動敘事地圖</title>
+<link rel="stylesheet" href="../../shared/style.css">
+</head>
+<body>
+<div class="toolbar">
+  <a class="back-link" href="../../">← 返回</a>
+  <h1>Secrets of Charlton School</h1>
+  <input class="search-box" placeholder="搜尋文本、角色、場景...">
+  <div class="view-tabs">
+    <button class="view-tab active" data-view="narrative">按敘事</button>
+    <button class="view-tab" data-view="scene">按場景</button>
+    <button class="view-tab" data-view="character">按角色</button>
+  </div>
+</div>
+<div class="content"><div style="text-align:center;padding:4rem;color:#999"><p>載入中...</p></div></div>
+<script src="../../shared/viewer.js"></script>
+<script>
+viewer=new NarrativeViewer({gameName:"Secrets of Charlton School",dataPath:"data/passages.json",metaPath:"data/meta.json"});
+viewer.init();
+</script>
+</body>
+</html>
