@@ -3,93 +3,447 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>遊戲劇情互動敘事地圖集</title>
+<title>Game Narratives — 互動敘事地圖集</title>
 <style>
-:root{--bg:#0f0f1a;--card-bg:#1a1a2e;--card-hover:#222244;--accent:#e94560;--accent2:#533483;--text:#eee;--text-dim:#999;--border:#333}
+:root{--bg:#1a1a2e;--card:#16213e;--card-hover:#1a2847;--accent:#e94560;--accent2:#533483;--green:#4ecdc4;--yellow:#f9c74f;--orange:#f4845f;--gray:#666;--text:#eee;--text-dim:#aaa;--border:#2a2a4a}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
-.header{background:linear-gradient(135deg,var(--accent2),var(--accent));padding:2rem;text-align:center}
-.header h1{font-size:2rem;margin-bottom:.5rem}
-.header p{color:rgba(255,255,255,.8)}
-.stats{display:flex;justify-content:center;gap:2rem;margin-top:1rem}
-.stat{text-align:center}.stat-num{font-size:1.5rem;font-weight:bold}.stat-label{font-size:.8rem;color:rgba(255,255,255,.7)}
-.filters{padding:1rem 2rem;display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center}
-.filter-btn{background:var(--card-bg);border:1px solid var(--border);color:var(--text);padding:.4rem 1rem;border-radius:1rem;cursor:pointer;font-size:.85rem;transition:all .2s}
-.filter-btn:hover,.filter-btn.active{background:var(--accent);border-color:var(--accent)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1.2rem;padding:1.5rem 2rem;max-width:1400px;margin:0 auto}
-.card{background:var(--card-bg);border:1px solid var(--border);border-radius:12px;padding:1.2rem;transition:all .2s;cursor:pointer}
-.card:hover{background:var(--card-hover);transform:translateY(-2px);box-shadow:0 4px 20px rgba(233,69,96,.15)}
-.card-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.8rem}
-.card-title{font-size:1.1rem;font-weight:600}
-.card-num{background:var(--accent2);color:white;font-size:.75rem;padding:.2rem .5rem;border-radius:.5rem}
-.card-meta{display:flex;gap:.5rem;margin-bottom:.6rem;flex-wrap:wrap}
-.tag{background:rgba(255,255,255,.08);padding:.15rem .5rem;border-radius:.4rem;font-size:.75rem;color:var(--text-dim)}
-.tag.engine{border-left:2px solid var(--accent)}.tag.status{border-left:2px solid #4ecdc4}
-.card-desc{font-size:.85rem;color:var(--text-dim);line-height:1.5;margin-bottom:.8rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-.card-footer{display:flex;justify-content:space-between;align-items:center}
-.progress{font-size:.75rem;color:var(--text-dim)}
-.progress-bar{width:80px;height:4px;background:var(--border);border-radius:2px;overflow:hidden;display:inline-block;vertical-align:middle;margin-left:.5rem}
-.progress-fill{height:100%;background:var(--accent);border-radius:2px;transition:width .3s}
-.card-link{color:var(--accent);text-decoration:none;font-size:.8rem}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+.header{background:linear-gradient(135deg,#0f3460 0%,var(--accent2) 50%,var(--accent) 100%);padding:2.5rem 2rem;text-align:center}
+.header h1{font-size:2.2rem;margin-bottom:.3rem;letter-spacing:.5px}
+.header .subtitle{color:rgba(255,255,255,.75);font-size:1rem;margin-bottom:1.2rem}
+.stats-row{display:flex;justify-content:center;gap:2.5rem;flex-wrap:wrap}
+.stat{text-align:center}
+.stat-num{font-size:1.8rem;font-weight:700}
+.stat-label{font-size:.8rem;color:rgba(255,255,255,.65);margin-top:2px}
+.filters{padding:1rem 2rem;display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center;background:rgba(0,0,0,.15)}
+.filter-btn{background:var(--card);border:1px solid var(--border);color:var(--text-dim);padding:.4rem 1rem;border-radius:2rem;cursor:pointer;font-size:.82rem;transition:all .2s}
+.filter-btn:hover,.filter-btn.active{background:var(--accent);border-color:var(--accent);color:#fff}
+.section-title{max-width:1400px;margin:1.5rem auto .8rem;padding:0 2rem;font-size:1.1rem;color:var(--text-dim);border-bottom:1px solid var(--border);padding-bottom:.5rem}
+.section-title span{color:var(--accent);font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1rem;padding:0 2rem 1.5rem;max-width:1400px;margin:0 auto}
+.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1.1rem 1.2rem;transition:all .25s;position:relative;display:flex;flex-direction:column}
+.card.clickable{cursor:pointer}
+.card.clickable:hover{background:var(--card-hover);transform:translateY(-2px);box-shadow:0 6px 24px rgba(233,69,96,.12);border-color:var(--accent)}
+.card-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.6rem}
+.card-title{font-size:1.05rem;font-weight:600;line-height:1.3}
+.card-num{font-size:.7rem;padding:.15rem .45rem;border-radius:.4rem;font-weight:600;flex-shrink:0;margin-left:.5rem}
+.num-done{background:var(--accent);color:#fff}
+.num-wip{background:var(--yellow);color:#1a1a2e}
+.num-pending{background:var(--gray);color:#ddd}
+.num-fail{background:#c0392b;color:#fff}
+.tags{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:.5rem}
+.tag{padding:.12rem .5rem;border-radius:.35rem;font-size:.72rem;color:var(--text-dim);background:rgba(255,255,255,.06)}
+.tag-engine{border-left:2px solid var(--accent)}
+.tag-passages{border-left:2px solid var(--green)}
+.tag-version{border-left:2px solid var(--accent2)}
+.card-desc{font-size:.82rem;color:var(--text-dim);line-height:1.45;flex:1}
+.badge{display:inline-block;font-size:.7rem;padding:.15rem .55rem;border-radius:1rem;font-weight:600;margin-top:.6rem}
+.badge-done{background:rgba(78,205,196,.15);color:var(--green);border:1px solid rgba(78,205,196,.3)}
+.badge-wip{background:rgba(249,199,79,.12);color:var(--yellow);border:1px solid rgba(249,199,79,.3)}
+.badge-pending{background:rgba(255,255,255,.05);color:var(--gray);border:1px solid rgba(255,255,255,.1)}
+.badge-fail{background:rgba(192,57,43,.15);color:#e74c3c;border:1px solid rgba(231,76,60,.3)}
+.card-footer{display:flex;justify-content:space-between;align-items:center;margin-top:.7rem;padding-top:.5rem;border-top:1px solid rgba(255,255,255,.05)}
+.card-link{color:var(--accent);text-decoration:none;font-size:.8rem;font-weight:500}
 .card-link:hover{text-decoration:underline}
-@media(max-width:768px){.grid{grid-template-columns:1fr;padding:1rem}.header h1{font-size:1.5rem}}
+.footer-text{text-align:center;padding:2rem;color:var(--gray);font-size:.75rem}
+@media(max-width:768px){.grid{grid-template-columns:1fr;padding:0 1rem 1rem}.header h1{font-size:1.6rem}.stats-row{gap:1.5rem}}
 </style>
 </head>
 <body>
+
 <div class="header">
-  <h1>遊戲劇情互動敘事地圖集</h1>
-  <p>Game Narratives Interactive Atlas</p>
-  <div class="stats">
-    <div class="stat"><div class="stat-num" id="total-games">22</div><div class="stat-label">遊戲</div></div>
-    <div class="stat"><div class="stat-num" id="completed-games">0</div><div class="stat-label">已解析</div></div>
-    <div class="stat"><div class="stat-num" id="total-passages">—</div><div class="stat-label">段落</div></div>
+  <h1>Game Narratives — 互動敘事地圖集</h1>
+  <p class="subtitle">Interactive Narrative Atlas &middot; 22 Games Tracked</p>
+  <div class="stats-row">
+    <div class="stat"><div class="stat-num">22</div><div class="stat-label">遊戲總數</div></div>
+    <div class="stat"><div class="stat-num">11</div><div class="stat-label">已完成</div></div>
+    <div class="stat"><div class="stat-num">2</div><div class="stat-label">分析中</div></div>
+    <div class="stat"><div class="stat-num">7,764</div><div class="stat-label">段落總數</div></div>
   </div>
 </div>
+
 <div class="filters">
-  <button class="filter-btn active" data-filter="all">全部</button>
-  <button class="filter-btn" data-filter="renpy">Ren'Py</button>
-  <button class="filter-btn" data-filter="rpgmaker">RPG Maker</button>
-  <button class="filter-btn" data-filter="html">HTML/Twine</button>
-  <button class="filter-btn" data-filter="other">其他</button>
+  <button class="filter-btn active" onclick="filterCards('all')">全部 (22)</button>
+  <button class="filter-btn" onclick="filterCards('done')">已完成 (11)</button>
+  <button class="filter-btn" onclick="filterCards('wip')">分析中 (2)</button>
+  <button class="filter-btn" onclick="filterCards('pending')">待下載 (7)</button>
+  <button class="filter-btn" onclick="filterCards('fail')">無法取得 (2)</button>
 </div>
-<div class="grid" id="game-grid"></div>
+
+<!-- ===== Completed (11) ===== -->
+<div class="section-title" data-section="done"><span>已完成</span> — 11 款遊戲已解析，可點擊瀏覽</div>
+<div class="grid" id="grid-done">
+
+  <div class="card clickable" onclick="location.href='games/friends-of-mine/'" data-status="done">
+    <div class="card-top">
+      <div class="card-title">Friends of Mine</div>
+      <span class="card-num num-done">#4</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">SugarCube 2.37.3</span>
+      <span class="tag tag-passages">2,508 段落</span>
+      <span class="tag tag-version">v1.4.4</span>
+    </div>
+    <div class="card-desc">70 萬字+ 沙盒 Twine 遊戲，七條主線，1000+ 場景</div>
+    <div class="card-footer">
+      <span class="badge badge-done">已完成</span>
+      <a class="card-link" href="games/friends-of-mine/">閱讀 →</a>
+    </div>
+  </div>
+
+  <div class="card clickable" onclick="location.href='games/pact-with-a-witch/'" data-status="done">
+    <div class="card-top">
+      <div class="card-title">Pact with a Witch</div>
+      <span class="card-num num-done">#10</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">Ren'Py</span>
+      <span class="tag tag-passages">1,462 段落</span>
+      <span class="tag tag-version">v00.22.00</span>
+    </div>
+    <div class="card-desc">與女巫的四次約會契約，拯救被詛咒的室友</div>
+    <div class="card-footer">
+      <span class="badge badge-done">已完成</span>
+      <a class="card-link" href="games/pact-with-a-witch/">閱讀 →</a>
+    </div>
+  </div>
+
+  <div class="card clickable" onclick="location.href='games/a-mirrors-curse/'" data-status="done">
+    <div class="card-top">
+      <div class="card-title">A Mirror's Curse</div>
+      <span class="card-num num-done">#12</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">SugarCube 2.37.3</span>
+      <span class="tag tag-passages">816 段落</span>
+      <span class="tag tag-version">v0.29</span>
+    </div>
+    <div class="card-desc">高中生的每日變身詛咒，紙娃娃系統 + 校園生活</div>
+    <div class="card-footer">
+      <span class="badge badge-done">已完成</span>
+      <a class="card-link" href="games/a-mirrors-curse/">閱讀 →</a>
+    </div>
+  </div>
+
+  <div class="card clickable" onclick="location.href='games/tgp-recollared/'" data-status="done">
+    <div class="card-top">
+      <div class="card-title">The Goblin's Pet — Recollared</div>
+      <span class="card-num num-done">#14</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">Twine / Harlowe 3.3.9</span>
+      <span class="tag tag-passages">813 段落</span>
+      <span class="tag tag-version">Ch.4</span>
+    </div>
+    <div class="card-desc">英雄被魔法項圈束縛，被迫侍奉哥布林主人。55萬字，21 章節</div>
+    <div class="card-footer">
+      <span class="badge badge-done">已完成</span>
+      <a class="card-link" href="games/tgp-recollared/">閱讀 →</a>
+    </div>
+  </div>
+
+  <div class="card clickable" onclick="location.href='games/oathbreaker/'" data-status="done">
+    <div class="card-top">
+      <div class="card-title">Oathbreaker</div>
+      <span class="card-num num-done">#9</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">SRPG Studio</span>
+      <span class="tag tag-passages">656 段落</span>
+      <span class="tag tag-version">Beta v0.14.0</span>
+    </div>
+    <div class="card-desc">火紋風格戰術 RPG，傭兵團的緩慢變身。26萬字劇本</div>
+    <div class="card-footer">
+      <span class="badge badge-done">已完成</span>
+      <a class="card-link" href="games/oathbreaker/">閱讀 →</a>
+    </div>
+  </div>
+
+  <div class="card clickable" onclick="location.href='games/cursed-rock/'" data-status="done">
+    <div class="card-top">
+      <div class="card-title">Cursed Rock</div>
+      <span class="card-num num-done">#6</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">SugarCube v2.21.0</span>
+      <span class="tag tag-passages">627 段落</span>
+      <span class="tag tag-version">Alpha v0.5</span>
+    </div>
+    <div class="card-desc">撿到石頭後的變身故事，含夢境 vs 現實分支</div>
+    <div class="card-footer">
+      <span class="badge badge-done">已完成</span>
+      <a class="card-link" href="games/cursed-rock/">閱讀 →</a>
+    </div>
+  </div>
+
+  <div class="card clickable" onclick="location.href='games/secrets-of-charlton-school/'" data-status="done">
+    <div class="card-top">
+      <div class="card-title">Secrets of Charlton School</div>
+      <span class="card-num num-done">#16</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">SugarCube 2 (Twine)</span>
+      <span class="tag tag-passages">380 段落</span>
+      <span class="tag tag-version">v0.1.93</span>
+    </div>
+    <div class="card-desc">魔法校園互動小說，36 角色，調查 Charlton School 的神秘事件</div>
+    <div class="card-footer">
+      <span class="badge badge-done">已完成</span>
+      <a class="card-link" href="games/secrets-of-charlton-school/">閱讀 →</a>
+    </div>
+  </div>
+
+  <div class="card clickable" onclick="location.href='games/witches-of-ravenbrook/'" data-status="done">
+    <div class="card-top">
+      <div class="card-title">Witches of Ravenbrook</div>
+      <span class="card-num num-done">#1</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">Pandemonium Engine (Lua)</span>
+      <span class="tag tag-passages">192 段落</span>
+      <span class="tag tag-version">v1.0.1</span>
+    </div>
+    <div class="card-desc">Ravenbrook 大學萬聖節慶典被女巫劫持，地下城探險 + 戰鬥中變身機制</div>
+    <div class="card-footer">
+      <span class="badge badge-done">已完成</span>
+      <a class="card-link" href="games/witches-of-ravenbrook/">閱讀 →</a>
+    </div>
+  </div>
+
+  <div class="card clickable" onclick="location.href='games/fem-clicker/'" data-status="done">
+    <div class="card-top">
+      <div class="card-title">Fem Clicker</div>
+      <span class="card-num num-done">#18</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">Custom HTML5 / JS</span>
+      <span class="tag tag-passages">188 段落</span>
+      <span class="tag tag-version">v0.0.2</span>
+    </div>
+    <div class="card-desc">放置型點擊遊戲，豐饒女神的雙路線變身</div>
+    <div class="card-footer">
+      <span class="badge badge-done">已完成</span>
+      <a class="card-link" href="games/fem-clicker/">閱讀 →</a>
+    </div>
+  </div>
+
+  <div class="card clickable" onclick="location.href='games/regency-masks/'" data-status="done">
+    <div class="card-top">
+      <div class="card-title">Regency Masks</div>
+      <span class="card-num num-done">#3</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">SugarCube v2.35 (Twine)</span>
+      <span class="tag tag-passages">76 段落</span>
+      <span class="tag tag-version">Alpha v1</span>
+    </div>
+    <div class="card-desc">改編克蘇魯 TRPG《Masks of Nyarlathotep》，1803 攝政時代秘魯冒險</div>
+    <div class="card-footer">
+      <span class="badge badge-done">已完成</span>
+      <a class="card-link" href="games/regency-masks/">閱讀 →</a>
+    </div>
+  </div>
+
+  <div class="card clickable" onclick="location.href='games/clean-pool/'" data-status="done">
+    <div class="card-top">
+      <div class="card-title">Clean Pool</div>
+      <span class="card-num num-done">#7</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">Ren'Py</span>
+      <span class="tag tag-passages">46 段落</span>
+      <span class="tag tag-version">v0.6.5.1</span>
+    </div>
+    <div class="card-desc">Rogue-like 敘事，游泳隊訓練設施中的神秘力量</div>
+    <div class="card-footer">
+      <span class="badge badge-done">已完成</span>
+      <a class="card-link" href="games/clean-pool/">閱讀 →</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- ===== In Progress (2) ===== -->
+<div class="section-title" data-section="wip"><span>分析中</span> — 2 款已下載，解析進行中</div>
+<div class="grid" id="grid-wip">
+
+  <div class="card" data-status="wip">
+    <div class="card-top">
+      <div class="card-title">Better Earth</div>
+      <span class="card-num num-wip">#15</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">RPG Maker VX Ace</span>
+      <span class="tag tag-version">v0.25.0</span>
+    </div>
+    <div class="card-desc">AR 遊戲洩漏到現實，100+ NPC 變身，22+ 結局</div>
+    <div class="card-footer">
+      <span class="badge badge-wip">分析中</span>
+    </div>
+  </div>
+
+  <div class="card" data-status="wip">
+    <div class="card-top">
+      <div class="card-title">Magical Camp</div>
+      <span class="card-num num-wip">#22</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">RPG Maker VX Ace</span>
+      <span class="tag tag-version">v0.5c (停更)</span>
+    </div>
+    <div class="card-desc">經典作品：失敗者被困魔法少女訓練營</div>
+    <div class="card-footer">
+      <span class="badge badge-wip">分析中</span>
+    </div>
+  </div>
+
+</div>
+
+<!-- ===== Pending (7) ===== -->
+<div class="section-title" data-section="pending"><span>待下載</span> — 7 款尚未取得</div>
+<div class="grid" id="grid-pending">
+
+  <div class="card" data-status="pending">
+    <div class="card-top">
+      <div class="card-title">Between</div>
+      <span class="card-num num-pending">#5</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">RPG Maker MV</span>
+      <span class="tag tag-version">Alpha v0.17.4</span>
+    </div>
+    <div class="card-desc">都市科學奇幻 RPG，策略戰鬥 + 變身職業系統</div>
+    <div class="card-footer"><span class="badge badge-pending">待下載</span></div>
+  </div>
+
+  <div class="card" data-status="pending">
+    <div class="card-top">
+      <div class="card-title">Crossdressing in Camelot</div>
+      <span class="card-num num-pending">#8</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">RPG Maker MV</span>
+      <span class="tag tag-version">v0.57.2</span>
+    </div>
+    <div class="card-desc">亞瑟王背景冒險 RPG，變身越多越強</div>
+    <div class="card-footer"><span class="badge badge-pending">待下載</span></div>
+  </div>
+
+  <div class="card" data-status="pending">
+    <div class="card-top">
+      <div class="card-title">Coffee Story</div>
+      <span class="card-num num-pending">#11</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">Game Maker</span>
+      <span class="tag tag-version">Alpha 20251229v5</span>
+    </div>
+    <div class="card-desc">夢境滲透現實的像素冒險，13000 行對白</div>
+    <div class="card-footer"><span class="badge badge-pending">待下載</span></div>
+  </div>
+
+  <div class="card" data-status="pending">
+    <div class="card-top">
+      <div class="card-title">Penumbra Hotel</div>
+      <span class="card-num num-pending">#17</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">RPG Maker MZ</span>
+      <span class="tag tag-version">Alpha v0.2.0</span>
+    </div>
+    <div class="card-desc">三名刺客在豪華酒店中的 Ero RPG</div>
+    <div class="card-footer"><span class="badge badge-pending">待下載</span></div>
+  </div>
+
+  <div class="card" data-status="pending">
+    <div class="card-top">
+      <div class="card-title">GameOver</div>
+      <span class="card-num num-pending">#19</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">Ren'Py</span>
+      <span class="tag tag-version">v2.4.2</span>
+    </div>
+    <div class="card-desc">失憶者在神秘小鎮醒來，多結局基於不同失敗條件</div>
+    <div class="card-footer"><span class="badge badge-pending">待下載</span></div>
+  </div>
+
+  <div class="card" data-status="pending">
+    <div class="card-top">
+      <div class="card-title">The Proteus Effect</div>
+      <span class="card-num num-pending">#20</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">RPG Maker MV</span>
+      <span class="tag tag-version">v10.2.3</span>
+    </div>
+    <div class="card-desc">喜劇 RPG，遊戲測試員被困虛擬世界</div>
+    <div class="card-footer"><span class="badge badge-pending">待下載</span></div>
+  </div>
+
+  <div class="card" data-status="pending">
+    <div class="card-top">
+      <div class="card-title">Trapped in a Fantasy Femdom Brothel</div>
+      <span class="card-num num-pending">#21</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">Ren'Py</span>
+      <span class="tag tag-version">v00.03.08</span>
+    </div>
+    <div class="card-desc">Femdom 世界中的債務償還與生存</div>
+    <div class="card-footer"><span class="badge badge-pending">待下載</span></div>
+  </div>
+
+</div>
+
+<!-- ===== Failed (2) ===== -->
+<div class="section-title" data-section="fail"><span>無法取得</span> — 2 款因來源問題無法下載</div>
+<div class="grid" id="grid-fail">
+
+  <div class="card" data-status="fail">
+    <div class="card-top">
+      <div class="card-title">Journey Into Sissyhood</div>
+      <span class="card-num num-fail">#2</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">Ren'Py</span>
+      <span class="tag tag-version">Beta v1.0.0v3</span>
+    </div>
+    <div class="card-desc">互動視覺小說，快/慢雙路線變身。已從 itch.io 下架。</div>
+    <div class="card-footer"><span class="badge badge-fail">無法取得 — 已從 itch.io 移除</span></div>
+  </div>
+
+  <div class="card" data-status="fail">
+    <div class="card-top">
+      <div class="card-title">Student Transfer</div>
+      <span class="card-num num-fail">#13</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">Ren'Py</span>
+      <span class="tag tag-version">v9.1</span>
+    </div>
+    <div class="card-desc">超大分支樹的長篇視覺小說，超自然力量的高中生。CDN 404 錯誤。</div>
+    <div class="card-footer"><span class="badge badge-fail">無法取得 — CDN 404</span></div>
+  </div>
+
+</div>
+
+<div class="footer-text">
+  Game Narratives &middot; 最後更新 2026-02-22 &middot; 由 AI 輔助解析與建構
+</div>
+
 <script>
-const GAMES=[
-{id:1,name:"Witches of Ravenbrook",engine:"Other",engineType:"other",version:"v1.0.1",author:"Saltyjustice",desc:"Ravenbrook \u5927\u5b78\u842c\u8056\u7bc0\u6176\u5178\u88ab\u5973\u5deb\u52ab\u6301\uff0c\u5730\u4e0b\u57ce\u63a2\u96aa + \u6230\u9b25\u4e2d\u8b8a\u8eab\u6a5f\u5236",progress:0,status:"\u5f85\u89e3\u6790",folder:"witches-of-ravenbrook"},
-{id:2,name:"Journey Into Sissyhood",engine:"Ren'Py",engineType:"renpy",version:"Beta v1.0.0v3",author:"LollipopSissy",desc:"\u4e92\u52d5\u8996\u89ba\u5c0f\u8aaa\uff0c\u5feb/\u6162\u96d9\u8def\u7dda\u8b8a\u8eab\uff0c\u542b\u50ac\u7720\u97f3\u8a0a\u548c\u6e2c\u9a57",progress:0,status:"\u5f85\u89e3\u6790",folder:"journey-into-sissyhood"},
-{id:3,name:"Regency Masks",engine:"HTML",engineType:"html",version:"Alpha v1",author:"Blauz.",desc:"\u6539\u7de8\u514b\u8607\u9b6f TRPG\u300aMasks of Nyarlathotep\u300b\uff0c1803 \u651d\u653f\u6642\u4ee3\u79d8\u9b6f\u5192\u96aa",progress:0,status:"\u5f85\u89e3\u6790",folder:"regency-masks"},
-{id:4,name:"Friends of Mine",engine:"HTML (Twine)",engineType:"html",version:"v1.4.4",author:"Sunfall",desc:"70 \u842c\u5b57+\u6c99\u76d2 Twine \u904a\u6232\uff0c\u4e03\u689d\u4e3b\u7dda\uff0c1000+ \u5834\u666f",progress:0,status:"\u5f85\u89e3\u6790",folder:"friends-of-mine"},
-{id:5,name:"Between",engine:"RPG Maker MV",engineType:"rpgmaker",version:"Alpha v0.17.4",author:"6six6",desc:"\u90fd\u5e02\u79d1\u5b78\u5947\u5e7b RPG\uff0c\u7b56\u7565\u6230\u9b25 + \u8b8a\u8eab\u8077\u696d\u7cfb\u7d71",progress:0,status:"\u5f85\u89e3\u6790",folder:"between"},
-{id:6,name:"Cursed Rock",engine:"HTML (Twine)",engineType:"html",version:"Alpha v0.5",author:"tgnoob5",desc:"\u64bf\u5230\u77f3\u982d\u5f8c\u7684\u8b8a\u8eab\u6545\u4e8b\uff0c\u542b\u5922\u5883 vs \u73fe\u5be6\u5206\u652f",progress:0,status:"\u5f85\u89e3\u6790",folder:"cursed-rock"},
-{id:7,name:"Clean Pool",engine:"Ren'Py",engineType:"renpy",version:"v0.6.5.1",author:"soisoi9876",desc:"Rogue-like \u6558\u4e8b\uff0c\u6e38\u6cf3\u968a\u8a13\u7df4\u8a2d\u65bd\u4e2d\u7684\u795e\u79d8\u529b\u91cf",progress:0,status:"\u5f85\u89e3\u6790",folder:"clean-pool"},
-{id:8,name:"Crossdressing in Camelot",engine:"RPG Maker MV",engineType:"rpgmaker",version:"v0.57.2",author:"stickyicky",desc:"\u4e9e\u745f\u738b\u80cc\u666f\u5192\u96aa RPG\uff0c\u8b8a\u8eab\u8d8a\u591a\u8d8a\u5f37",progress:0,status:"\u5f85\u89e3\u6790",folder:"crossdressing-in-camelot"},
-{id:9,name:"Oathbreaker",engine:"SRPG Studio",engineType:"other",version:"Beta v0.14.0",author:"Oathbreaker Dev",desc:"\u706b\u7d0b\u98a8\u683c\u6230\u8853 RPG\uff0c\u50ad\u5175\u5718\u7684\u7de9\u6162\u8b8a\u8eab",progress:0,status:"\u5f85\u89e3\u6790",folder:"oathbreaker"},
-{id:10,name:"Pact with a Witch",engine:"Ren'Py",engineType:"renpy",version:"v00.22.00",author:"jonnymelabo",desc:"\u8207\u5973\u5deb\u7684\u56db\u6b21\u7d04\u6703\u5951\u7d04\uff0c\u62ef\u6551\u88ab\u8a5b\u5492\u7684\u5ba4\u53cb",progress:0,status:"\u5f85\u89e3\u6790",folder:"pact-with-a-witch"},
-{id:11,name:"Coffee Story",engine:"Game Maker",engineType:"other",version:"Alpha 20251229v5",author:"unniex",desc:"\u5922\u5883\u6ef2\u900f\u73fe\u5be6\u7684\u50cf\u7d20\u5192\u96aa\uff0c13000 \u884c\u5c0d\u767d",progress:0,status:"\u5f85\u89e3\u6790",folder:"coffee-story"},
-{id:12,name:"A Mirror's Curse",engine:"HTML",engineType:"html",version:"v0.29",author:"amaty",desc:"\u9ad8\u4e2d\u751f\u7684\u6bcf\u65e5\u8b8a\u8eab\u8a5b\u5492\uff0c\u7d19\u5a03\u5a03\u7cfb\u7d71 + \u6821\u5712\u751f\u6d3b",progress:0,status:"\u5df2\u4e0b\u8f09",folder:"a-mirrors-curse"},
-{id:13,name:"Student Transfer",engine:"Ren'Py",engineType:"renpy",version:"v9.1",author:"CobaltCore",desc:"\u8d85\u5927\u5206\u652f\u6a39\u7684\u9577\u7bc7\u8996\u89ba\u5c0f\u8aaa\uff0c\u8d85\u81ea\u7136\u529b\u91cf\u7684\u9ad8\u4e2d\u751f",progress:0,status:"\u5f85\u89e3\u6790",folder:"student-transfer"},
-{id:14,name:"The Goblin's Pet - Recollared",engine:"HTML (Twine/Harlowe)",engineType:"html",version:"Ch.4",author:"kokopelli",desc:"\u82f1\u96c4\u88ab\u9b54\u6cd5\u9805\u5708\u675f\u7e1b\uff0c\u88ab\u8feb\u4f8d\u5949\u54e5\u5e03\u6797\u4e3b\u4eba\u3002813 \u6bb5\u843d\uff0c55\u842c\u5b57\uff0c21 \u7ae0\u7bc0",progress:100,status:"\u5df2\u89e3\u6790",folder:"tgp-recollared"},
-{id:15,name:"Better Earth",engine:"RPG Maker VX Ace",engineType:"rpgmaker",version:"v0.25.0",author:"Hito125",desc:"AR \u904a\u6232\u6d29\u6f0f\u5230\u73fe\u5be6\uff0c100+ NPC \u8b8a\u8eab\uff0c22+ \u7d50\u5c40",progress:0,status:"\u5f85\u89e3\u6790",folder:"better-earth"},
-{id:16,name:"The Secrets of Charlton School",engine:"HTML (SugarCube)",engineType:"html",version:"v0.1.93",author:"lauren",desc:"490 段落魔法校園互動小說，36 角色，121 場景。調查 Charlton School 的神秘事件，解開詛咒與舞會陰謀",progress:100,status:"已解析",folder:"secrets-of-charlton-school"},
-{id:17,name:"Penumbra Hotel",engine:"RPG Maker MZ",engineType:"rpgmaker",version:"Alpha v0.2.0",author:"HelloEveryoned1",desc:"\u4e09\u540d\u523a\u5ba2\u5728\u8c6a\u83ef\u9152\u5e97\u4e2d\u7684 Ero RPG",progress:0,status:"\u5f85\u89e3\u6790",folder:"penumbra-hotel"},
-{id:18,name:"Fem Clicker",engine:"HTML",engineType:"html",version:"v0.0.2",author:"akita",desc:"\u653e\u7f6e\u578b\u9ede\u64ca\u904a\u6232\uff0c\u8c50\u9952\u5973\u795e\u7684\u96d9\u8def\u7dda\u8b8a\u8eab",progress:0,status:"\u5f85\u89e3\u6790",folder:"fem-clicker"},
-{id:19,name:"GameOver",engine:"Ren'Py",engineType:"renpy",version:"v2.4.2",author:"azulookami",desc:"\u5931\u61b6\u8005\u5728\u795e\u79d8\u5c0f\u93ae\u9192\u4f86\uff0c\u591a\u7d50\u5c40\u57fa\u65bc\u4e0d\u540c\u5931\u6557\u689d\u4ef6",progress:0,status:"\u5f85\u89e3\u6790",folder:"gameover"},
-{id:20,name:"The Proteus Effect",engine:"RPG Maker MV",engineType:"rpgmaker",version:"v10.2.3",author:"Proxxie",desc:"\u559c\u5287 RPG\uff0c\u904a\u6232\u6e2c\u8a66\u54e1\u88ab\u56f0\u865b\u64ec\u4e16\u754c",progress:0,status:"\u5f85\u89e3\u6790",folder:"the-proteus-effect"},
-{id:21,name:"Trapped in a Fantasy Femdom Brothel",engine:"Ren'Py",engineType:"renpy",version:"v00.03.08",author:"jonnymelabo",desc:"Femdom \u4e16\u754c\u4e2d\u7684\u50b5\u52d9\u511f\u9084\u8207\u751f\u5b58",progress:0,status:"\u5f85\u89e3\u6790",folder:"trapped-femdom-brothel"},
-{id:22,name:"Magical Camp",engine:"RPG Maker VX Ace",engineType:"rpgmaker",version:"v0.5c (\u505c\u66f4)",author:"HLF",desc:"\u7d93\u5178\u4f5c\u54c1\uff1a\u5931\u6557\u8005\u88ab\u56f0\u9b54\u6cd5\u5c11\u5973\u8a13\u7df4\u71df",progress:0,status:"\u5f85\u89e3\u6790",folder:"magical-camp"}
-];
-function renderGrid(filter='all'){
-const grid=document.getElementById('game-grid');grid.innerHTML='';
-const filtered=filter==='all'?GAMES:GAMES.filter(g=>g.engineType===filter);
-filtered.forEach(g=>{
-const card=document.createElement('div');card.className='card';
-card.onclick=()=>{if(g.progress>0)window.location.href=`games/${g.folder}/index.html`;};
-card.innerHTML=`<div class="card-header"><div class="card-title">${g.name}</div><span class="card-num">#${g.id}</span></div><div class="card-meta"><span class="tag engine">${g.engine}</span><span class="tag status">${g.version}</span><span class="tag">${g.author}</span></div><div class="card-desc">${g.desc}</div><div class="card-footer"><span class="progress">${g.status}<span class="progress-bar"><span class="progress-fill" style="width:${g.progress}%"></span></span></span>${g.progress>0?`<a class="card-link" href="games/${g.folder}/index.html">\u95b1\u8b80 \u2192</a>`:'<span class="card-link" style="opacity:.4">\u5c1a\u672a\u89e3\u6790</span>'}</div>`;
-grid.appendChild(card);});
-document.getElementById('completed-games').textContent=GAMES.filter(g=>g.progress>=100).length;
+function filterCards(status){
+  document.querySelectorAll('.filter-btn').forEach(b=>{b.classList.remove('active');if(b.textContent.includes({'all':'全部','done':'已完成','wip':'分析中','pending':'待下載','fail':'無法取得'}[status]))b.classList.add('active');});
+  const sections=['done','wip','pending','fail'];
+  sections.forEach(s=>{
+    const title=document.querySelector(`[data-section="${s}"]`);
+    const grid=document.getElementById(`grid-${s}`);
+    if(status==='all'){title.style.display='';grid.style.display='';}
+    else if(s===status){title.style.display='';grid.style.display='';}
+    else{title.style.display='none';grid.style.display='none';}
+  });
 }
-document.querySelectorAll('.filter-btn').forEach(btn=>{btn.addEventListener('click',()=>{document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');renderGrid(btn.dataset.filter);});});
-renderGrid();
 </script>
 </body>
 </html>
