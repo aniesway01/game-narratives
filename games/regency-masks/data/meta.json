@@ -1,0 +1,91 @@
+{
+  "title": "Masks of Ahu Shin Kage",
+  "subtitle": "Regency Masks of Nyarlathotep",
+  "engine": "SugarCube v2.35 (Twine 1.4.2)",
+  "source_file": "Regency Masks.html",
+  "parsed_at": "2026-02-22T15:55:36",
+  "total_passages": 76,
+  "characters": [
+    {
+      "name": "Alyce",
+      "description": "Alyce - Maid of Miss Marcella",
+      "mentions": 18
+    },
+    {
+      "name": "Ashley",
+      "description": "Mr./Lady Ashley Marston - Main character",
+      "mentions": 4
+    },
+    {
+      "name": "Marcella",
+      "description": "Miss Marcella Marston - Twin sister",
+      "mentions": 16
+    },
+    {
+      "name": "Marcellus",
+      "description": "Mr. Marcellus / Ashley Marston - Twin (male form)",
+      "mentions": 26
+    },
+    {
+      "name": "Mendoza",
+      "description": "Luis de Mendoza - Local guide",
+      "mentions": 19
+    },
+    {
+      "name": "Mendozza",
+      "description": "Luis de Mendoza - Local guide (alt spelling)",
+      "mentions": 3
+    },
+    {
+      "name": "Miller",
+      "description": "John Miller - Former soldier",
+      "mentions": 24
+    },
+    {
+      "name": "Mr. Jones",
+      "description": "Mr. Hugh Jones - Gentleman explorer",
+      "mentions": 18
+    },
+    {
+      "name": "Mr. Marston",
+      "description": "Mr. Marston",
+      "mentions": 0
+    },
+    {
+      "name": "Parker",
+      "description": "Andrew Parker - Fighter / contractor",
+      "mentions": 33
+    },
+    {
+      "name": "Sir Edward",
+      "description": "Sir Edward Larkin - Explorer, East India Company",
+      "mentions": 22
+    },
+    {
+      "name": "Sir William",
+      "description": "Sir William Marston - British diplomat, father",
+      "mentions": 35
+    }
+  ],
+  "groups": {
+    "Main Story (Peru)": 50,
+    "Lore & Background": 5,
+    "Character Profiles": 16,
+    "Introduction": 2,
+    "Story Branch": 1,
+    "Other": 2
+  },
+  "group_order": [
+    "Main Story (Peru)",
+    "Lore & Background",
+    "Character Profiles",
+    "Introduction",
+    "Story Branch",
+    "Other"
+  ],
+  "stats": {
+    "total_words": 19025,
+    "total_choices": 91,
+    "passages_with_images": 44
+  }
+}
