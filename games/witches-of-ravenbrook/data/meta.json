@@ -1,0 +1,471 @@
+{
+  "game": "Witches of Ravenbrook",
+  "version": "Runes of Pandemonium",
+  "engine": "Pandemonium Adventure Engine v4.24 (Lua 5.4)",
+  "total_passages": 192,
+  "total_lua_files": 3503,
+  "total_scene_files": 377,
+  "total_dialogue_files": 19,
+  "chapters": [
+    "Chapter 1 (Mei)",
+    "Chapter 2 (Sanya)",
+    "Chapter 5 (Christine)"
+  ],
+  "characters": [
+    {
+      "name": "Christine",
+      "role": "Protagonist",
+      "description": "Appears in: Chapter 5. Forms: Human, Male, Darkmatter, Dreamer, Doll, Golem, Electrosprite, LatexDrone, Raibie, Raiju, SteamDroid, Wiregirl, Secrebot"
+    },
+    {
+      "name": "Mei",
+      "role": "Protagonist",
+      "description": "Appears in: Chapter 1, Chapter 2. Forms: Human, Alraune, Bee, Ghost, Gravemarker, Rubber, Mannequin, Slime, Werecat, Wisphag, Zombee"
+    },
+    {
+      "name": "Sanya",
+      "role": "Protagonist",
+      "description": "Appears in: Chapter 2. Forms: Human"
+    },
+    {
+      "name": "Empress",
+      "role": "Party Member",
+      "description": "Appears in: Chapter 2. Roles: NPC with dialogue. Topics: 3"
+    },
+    {
+      "name": "Florentina",
+      "role": "Party Member",
+      "description": "Appears in: Chapter 1, Chapter 2. Roles: Agarist, Lurker, Mediator, Merchant, NPC with dialogue, TreasureHunter. Topics: 29"
+    },
+    {
+      "name": "Izuna",
+      "role": "Party Member",
+      "description": "Appears in: Chapter 2. Roles: NPC with dialogue. Topics: 7"
+    },
+    {
+      "name": "Odar",
+      "role": "Party Member",
+      "description": ""
+    },
+    {
+      "name": "Tiffany",
+      "role": "Party Member",
+      "description": "Appears in: Chapter 5. Roles: NPC with dialogue. Topics: 22"
+    },
+    {
+      "name": "Zeke",
+      "role": "Party Member",
+      "description": "Appears in: Chapter 2. Roles: NPC with dialogue. Topics: 5"
+    },
+    {
+      "name": "Adina",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "Alraune",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "Angelface",
+      "role": "NPC",
+      "description": "Topics: 4"
+    },
+    {
+      "name": "Backers",
+      "role": "NPC",
+      "description": "Topics: 16"
+    },
+    {
+      "name": "Backers5",
+      "role": "NPC",
+      "description": "Topics: 16"
+    },
+    {
+      "name": "BackersKitsune",
+      "role": "NPC",
+      "description": "Topics: 35"
+    },
+    {
+      "name": "BackersManufactory",
+      "role": "NPC",
+      "description": "Topics: 6"
+    },
+    {
+      "name": "BackersRaiju",
+      "role": "NPC",
+      "description": "Topics: 8"
+    },
+    {
+      "name": "BackersRepressed",
+      "role": "NPC",
+      "description": "Topics: 6"
+    },
+    {
+      "name": "Bee",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "Beth",
+      "role": "NPC",
+      "description": "Appears in: Chapter H"
+    },
+    {
+      "name": "Blythe",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1. Topics: 18"
+    },
+    {
+      "name": "Breanne",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1. Topics: 14"
+    },
+    {
+      "name": "Bunny",
+      "role": "NPC",
+      "description": "Appears in: Chapter 2"
+    },
+    {
+      "name": "Captain",
+      "role": "NPC",
+      "description": "Appears in: Chapter 5"
+    },
+    {
+      "name": "Cassandra",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "Chris",
+      "role": "NPC",
+      "description": "Appears in: Chapter 5, Chapter H"
+    },
+    {
+      "name": "ChristineTerminal",
+      "role": "NPC",
+      "description": "Topics: 11"
+    },
+    {
+      "name": "Claudia",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "CombatBooks",
+      "role": "NPC",
+      "description": "Topics: 5"
+    },
+    {
+      "name": "Confused",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "Console",
+      "role": "NPC",
+      "description": "Appears in: Chapter 5"
+    },
+    {
+      "name": "CrowbarChan",
+      "role": "NPC",
+      "description": "Topics: 4"
+    },
+    {
+      "name": "Cultist",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "CultistF",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "CultistM",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "Dahlia",
+      "role": "NPC",
+      "description": "Appears in: Chapter H"
+    },
+    {
+      "name": "Doll",
+      "role": "NPC",
+      "description": "Appears in: Chapter H"
+    },
+    {
+      "name": "Drone",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1, Chapter 5"
+    },
+    {
+      "name": "Esmerelda",
+      "role": "NPC",
+      "description": "Topics: 6"
+    },
+    {
+      "name": "EvermoonNWBookshelf",
+      "role": "NPC",
+      "description": "Topics: 6"
+    },
+    {
+      "name": "Fang",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "Ghost",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "Gold",
+      "role": "NPC",
+      "description": "Appears in: Chapter 5"
+    },
+    {
+      "name": "Golem",
+      "role": "NPC",
+      "description": "Appears in: Chapter 5"
+    },
+    {
+      "name": "Green",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "Guard",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "Happy",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "Hypatia",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "Intercom",
+      "role": "NPC",
+      "description": "Roles: NPC with dialogue"
+    },
+    {
+      "name": "Karina",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1. Topics: 8"
+    },
+    {
+      "name": "Lady",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "Lore",
+      "role": "NPC",
+      "description": "Appears in: Chapter H"
+    },
+    {
+      "name": "Lydie",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "MC",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "Man",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "Meryl",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "Mia",
+      "role": "NPC",
+      "description": "Topics: 7"
+    },
+    {
+      "name": "Miho",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1. Topics: 7"
+    },
+    {
+      "name": "Miso",
+      "role": "NPC",
+      "description": "Appears in: Chapter 2. Roles: NPC with dialogue. Topics: 8"
+    },
+    {
+      "name": "Mushraune",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "Mycela",
+      "role": "NPC",
+      "description": "Topics: 5"
+    },
+    {
+      "name": "Nadia",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1. Topics: 19"
+    },
+    {
+      "name": "Narrator",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "Natalie",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "Night",
+      "role": "NPC",
+      "description": "Topics: 5"
+    },
+    {
+      "name": "PDU",
+      "role": "NPC",
+      "description": "Appears in: Chapter 5"
+    },
+    {
+      "name": "PipeNightmare",
+      "role": "NPC",
+      "description": "Topics: 7"
+    },
+    {
+      "name": "Plant",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "Polaris",
+      "role": "NPC",
+      "description": "Topics: 18"
+    },
+    {
+      "name": "Psue",
+      "role": "NPC",
+      "description": "Appears in: Chapter 5"
+    },
+    {
+      "name": "Raiju",
+      "role": "NPC",
+      "description": "Appears in: Chapter 5"
+    },
+    {
+      "name": "Red",
+      "role": "NPC",
+      "description": "Appears in: Chapter 5"
+    },
+    {
+      "name": "Rilmani",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "Rochea",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1. Topics: 12"
+    },
+    {
+      "name": "SX399",
+      "role": "NPC",
+      "description": "Roles: NPC with dialogue. Topics: 10"
+    },
+    {
+      "name": "Septima",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1. Topics: 10"
+    },
+    {
+      "name": "Serious",
+      "role": "NPC",
+      "description": "Appears in: Chapter 5"
+    },
+    {
+      "name": "Sharelock",
+      "role": "NPC",
+      "description": "Topics: 6"
+    },
+    {
+      "name": "Slime",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "Sophie",
+      "role": "NPC",
+      "description": "Appears in: Chapter 5. Roles: NPC with dialogue. Topics: 6"
+    },
+    {
+      "name": "Surprise",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "Teal",
+      "role": "NPC",
+      "description": "Appears in: Chapter 5"
+    },
+    {
+      "name": "Tetra",
+      "role": "NPC",
+      "description": "Appears in: Chapter 2. Roles: NPC with dialogue"
+    },
+    {
+      "name": "Thrall",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "TiffanyBiolabs",
+      "role": "NPC",
+      "description": "Topics: 16"
+    },
+    {
+      "name": "Tram",
+      "role": "NPC",
+      "description": "Roles: NPC with dialogue"
+    },
+    {
+      "name": "Villager",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "Voice",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1, Chapter 5"
+    },
+    {
+      "name": "Werecat",
+      "role": "NPC",
+      "description": "Appears in: Chapter 1"
+    },
+    {
+      "name": "Yukina",
+      "role": "NPC",
+      "description": "Topics: 5"
+    },
+    {
+      "name": "ZGeneral",
+      "role": "NPC",
+      "description": "Topics: 1"
+    }
+  ]
+}
