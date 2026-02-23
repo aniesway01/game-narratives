@@ -53,26 +53,76 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--
 
 <div class="header">
   <h1>Game Narratives — 互動敘事地圖集</h1>
-  <p class="subtitle">Interactive Narrative Atlas &middot; 22 Games Tracked</p>
+  <p class="subtitle">Interactive Narrative Atlas &middot; 23 Games Tracked</p>
   <div class="stats-row">
-    <div class="stat"><div class="stat-num">22</div><div class="stat-label">遊戲總數</div></div>
-    <div class="stat"><div class="stat-num">11</div><div class="stat-label">已完成</div></div>
-    <div class="stat"><div class="stat-num">2</div><div class="stat-label">分析中</div></div>
-    <div class="stat"><div class="stat-num">7,764</div><div class="stat-label">段落總數</div></div>
+    <div class="stat"><div class="stat-num">23</div><div class="stat-label">遊戲總數</div></div>
+    <div class="stat"><div class="stat-num">14</div><div class="stat-label">已完成</div></div>
+    <div class="stat"><div class="stat-num">0</div><div class="stat-label">分析中</div></div>
+    <div class="stat"><div class="stat-num">54,459</div><div class="stat-label">段落總數</div></div>
   </div>
 </div>
 
 <div class="filters">
-  <button class="filter-btn active" onclick="filterCards('all')">全部 (22)</button>
-  <button class="filter-btn" onclick="filterCards('done')">已完成 (11)</button>
-  <button class="filter-btn" onclick="filterCards('wip')">分析中 (2)</button>
+  <button class="filter-btn active" onclick="filterCards('all')">全部 (23)</button>
+  <button class="filter-btn" onclick="filterCards('done')">已完成 (14)</button>
   <button class="filter-btn" onclick="filterCards('pending')">待下載 (7)</button>
   <button class="filter-btn" onclick="filterCards('fail')">無法取得 (2)</button>
 </div>
 
-<!-- ===== Completed (11) ===== -->
-<div class="section-title" data-section="done"><span>已完成</span> — 11 款遊戲已解析，可點擊瀏覽</div>
+<!-- ===== Completed (14) ===== -->
+<div class="section-title" data-section="done"><span>已完成</span> — 14 款遊戲已解析，可點擊瀏覽</div>
 <div class="grid" id="grid-done">
+
+  <div class="card clickable" onclick="location.href='games/magical-camp/'" data-status="done">
+    <div class="card-top">
+      <div class="card-title">Magical Camp</div>
+      <span class="card-num num-done">#22</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">RPG Maker VX Ace</span>
+      <span class="tag tag-passages">29,780 段落</span>
+      <span class="tag tag-version">v0.5 Final</span>
+    </div>
+    <div class="card-desc">經典作品：失敗者被困魔法少女訓練營</div>
+    <div class="card-footer">
+      <span class="badge badge-done">已完成</span>
+      <a class="card-link" href="games/magical-camp/">閱讀 →</a>
+    </div>
+  </div>
+
+  <div class="card clickable" onclick="window.open('https://aniesway01.github.io/utr-narrative/','_blank')" data-status="done">
+    <div class="card-top">
+      <div class="card-title">Underneath the Labyrinth</div>
+      <span class="card-num num-done">#23</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">Construct 2 (NW.js)</span>
+      <span class="tag tag-passages">11,707 段落</span>
+      <span class="tag tag-version">v0.1.34</span>
+    </div>
+    <div class="card-desc">迷宮探索 RPG，含 sprite 圖文互動體驗、角色立繪、完整中文翻譯</div>
+    <div class="card-footer">
+      <span class="badge badge-done">已完成 — 獨立站點</span>
+      <a class="card-link" href="https://aniesway01.github.io/utr-narrative/" target="_blank">閱讀 ↗</a>
+    </div>
+  </div>
+
+  <div class="card clickable" onclick="location.href='games/better-earth/'" data-status="done">
+    <div class="card-top">
+      <div class="card-title">Better Earth</div>
+      <span class="card-num num-done">#15</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">RPG Maker VX Ace</span>
+      <span class="tag tag-passages">5,208 段落</span>
+      <span class="tag tag-version">v0.25.0</span>
+    </div>
+    <div class="card-desc">AR 遊戲洩漏到現實，100+ NPC 變身，22+ 結局</div>
+    <div class="card-footer">
+      <span class="badge badge-done">已完成</span>
+      <a class="card-link" href="games/better-earth/">閱讀 →</a>
+    </div>
+  </div>
 
   <div class="card clickable" onclick="location.href='games/friends-of-mine/'" data-status="done">
     <div class="card-top">
@@ -263,42 +313,6 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--
 
 </div>
 
-<!-- ===== In Progress (2) ===== -->
-<div class="section-title" data-section="wip"><span>分析中</span> — 2 款已下載，解析進行中</div>
-<div class="grid" id="grid-wip">
-
-  <div class="card" data-status="wip">
-    <div class="card-top">
-      <div class="card-title">Better Earth</div>
-      <span class="card-num num-wip">#15</span>
-    </div>
-    <div class="tags">
-      <span class="tag tag-engine">RPG Maker VX Ace</span>
-      <span class="tag tag-version">v0.25.0</span>
-    </div>
-    <div class="card-desc">AR 遊戲洩漏到現實，100+ NPC 變身，22+ 結局</div>
-    <div class="card-footer">
-      <span class="badge badge-wip">分析中</span>
-    </div>
-  </div>
-
-  <div class="card" data-status="wip">
-    <div class="card-top">
-      <div class="card-title">Magical Camp</div>
-      <span class="card-num num-wip">#22</span>
-    </div>
-    <div class="tags">
-      <span class="tag tag-engine">RPG Maker VX Ace</span>
-      <span class="tag tag-version">v0.5c (停更)</span>
-    </div>
-    <div class="card-desc">經典作品：失敗者被困魔法少女訓練營</div>
-    <div class="card-footer">
-      <span class="badge badge-wip">分析中</span>
-    </div>
-  </div>
-
-</div>
-
 <!-- ===== Pending (7) ===== -->
 <div class="section-title" data-section="pending"><span>待下載</span> — 7 款尚未取得</div>
 <div class="grid" id="grid-pending">
@@ -434,8 +448,8 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--
 
 <script>
 function filterCards(status){
-  document.querySelectorAll('.filter-btn').forEach(b=>{b.classList.remove('active');if(b.textContent.includes({'all':'全部','done':'已完成','wip':'分析中','pending':'待下載','fail':'無法取得'}[status]))b.classList.add('active');});
-  const sections=['done','wip','pending','fail'];
+  document.querySelectorAll('.filter-btn').forEach(b=>{b.classList.remove('active');if(b.textContent.includes({'all':'全部','done':'已完成','pending':'待下載','fail':'無法取得'}[status]))b.classList.add('active');});
+  const sections=['done','pending','fail'];
   sections.forEach(s=>{
     const title=document.querySelector(`[data-section="${s}"]`);
     const grid=document.getElementById(`grid-${s}`);
