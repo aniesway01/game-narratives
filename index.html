@@ -53,27 +53,27 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--
 
 <div class="header">
   <h1>Game Narratives — 互動敘事地圖集</h1>
-  <p class="subtitle">Interactive Narrative Atlas &middot; 23 Games Tracked</p>
+  <p class="subtitle">Interactive Narrative Atlas &middot; 32 Games Tracked</p>
   <div class="stats-row">
-    <div class="stat"><div class="stat-num">23</div><div class="stat-label">遊戲總數</div></div>
-    <div class="stat"><div class="stat-num">14</div><div class="stat-label">已完成</div></div>
-    <div class="stat"><div class="stat-num">0</div><div class="stat-label">分析中</div></div>
-    <div class="stat"><div class="stat-num">54,631</div><div class="stat-label">段落總數</div></div>
+    <div class="stat"><div class="stat-num">32</div><div class="stat-label">遊戲總數</div></div>
+    <div class="stat"><div class="stat-num">23</div><div class="stat-label">已完成</div></div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">翻譯中</div></div>
+    <div class="stat"><div class="stat-num">80,000+</div><div class="stat-label">段落總數</div></div>
   </div>
 </div>
 
 <div class="filters">
-  <button class="filter-btn active" onclick="filterCards('all')">全部 (23)</button>
-  <button class="filter-btn" onclick="filterCards('done')">已完成 (14)</button>
+  <button class="filter-btn active" onclick="filterCards('all')">全部 (32)</button>
+  <button class="filter-btn" onclick="filterCards('done')">已完成 (23)</button>
   <button class="filter-btn" onclick="filterCards('pending')">待下載 (7)</button>
   <button class="filter-btn" onclick="filterCards('fail')">無法取得 (2)</button>
 </div>
 
 <!-- ===== Completed (14) ===== -->
-<div class="section-title" data-section="done"><span>已完成</span> — 14 款遊戲已解析，可點擊瀏覽</div>
+<div class="section-title" data-section="done"><span>已完成</span> — 23 款遊戲已解析，可點擊瀏覽（含中文翻譯）</div>
 <div class="grid" id="grid-done">
 
-  <div class="card clickable" onclick="location.href='games/magical-camp/'" data-status="done">
+  <div class="card clickable" onclick="window.open('https://aniesway01.github.io/magical-camp-narrative/','_blank')" data-status="done">
     <div class="card-top">
       <div class="card-title">Magical Camp</div>
       <span class="card-num num-done">#22</span>
@@ -86,7 +86,7 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--
     <div class="card-desc">經典作品：失敗者被困魔法少女訓練營</div>
     <div class="card-footer">
       <span class="badge badge-done">已完成</span>
-      <a class="card-link" href="games/magical-camp/">閱讀 →</a>
+      <a class="card-link" href="https://aniesway01.github.io/magical-camp-narrative/" target="_blank">閱讀 →</a>
     </div>
   </div>
 
@@ -107,7 +107,7 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--
     </div>
   </div>
 
-  <div class="card clickable" onclick="location.href='games/better-earth/'" data-status="done">
+  <div class="card clickable" onclick="window.open('https://aniesway01.github.io/better-earth-narrative/','_blank')" data-status="done">
     <div class="card-top">
       <div class="card-title">Better Earth</div>
       <span class="card-num num-done">#15</span>
@@ -120,11 +120,11 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--
     <div class="card-desc">AR 遊戲洩漏到現實，100+ NPC 變身，22+ 結局</div>
     <div class="card-footer">
       <span class="badge badge-done">已完成</span>
-      <a class="card-link" href="games/better-earth/">閱讀 →</a>
+      <a class="card-link" href="https://aniesway01.github.io/better-earth-narrative/" target="_blank">閱讀 →</a>
     </div>
   </div>
 
-  <div class="card clickable" onclick="location.href='games/friends-of-mine/'" data-status="done">
+  <div class="card clickable" onclick="window.open('https://aniesway01.github.io/friends-of-mine-narrative/','_blank')" data-status="done">
     <div class="card-top">
       <div class="card-title">Friends of Mine</div>
       <span class="card-num num-done">#4</span>
@@ -137,11 +137,11 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--
     <div class="card-desc">70 萬字+ 沙盒 Twine 遊戲，七條主線，1000+ 場景</div>
     <div class="card-footer">
       <span class="badge badge-done">已完成</span>
-      <a class="card-link" href="games/friends-of-mine/">閱讀 →</a>
+      <a class="card-link" href="https://aniesway01.github.io/friends-of-mine-narrative/" target="_blank">閱讀 →</a>
     </div>
   </div>
 
-  <div class="card clickable" onclick="location.href='games/pact-with-a-witch/'" data-status="done">
+  <div class="card clickable" onclick="window.open('https://aniesway01.github.io/pact-with-a-witch-narrative/','_blank')" data-status="done">
     <div class="card-top">
       <div class="card-title">Pact with a Witch</div>
       <span class="card-num num-done">#10</span>
@@ -154,7 +154,7 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--
     <div class="card-desc">與女巫的四次約會契約，拯救被詛咒的室友</div>
     <div class="card-footer">
       <span class="badge badge-done">已完成</span>
-      <a class="card-link" href="games/pact-with-a-witch/">閱讀 →</a>
+      <a class="card-link" href="https://aniesway01.github.io/pact-with-a-witch-narrative/" target="_blank">閱讀 →</a>
     </div>
   </div>
 
@@ -175,7 +175,7 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--
     </div>
   </div>
 
-  <div class="card clickable" onclick="location.href='games/tgp-recollared/'" data-status="done">
+  <div class="card clickable" onclick="window.open('https://aniesway01.github.io/tgp-recollared-narrative/','_blank')" data-status="done">
     <div class="card-top">
       <div class="card-title">The Goblin's Pet — Recollared</div>
       <span class="card-num num-done">#14</span>
@@ -188,11 +188,11 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--
     <div class="card-desc">英雄被魔法項圈束縛，被迫侍奉哥布林主人。55萬字，21 章節</div>
     <div class="card-footer">
       <span class="badge badge-done">已完成</span>
-      <a class="card-link" href="games/tgp-recollared/">閱讀 →</a>
+      <a class="card-link" href="https://aniesway01.github.io/tgp-recollared-narrative/" target="_blank">閱讀 →</a>
     </div>
   </div>
 
-  <div class="card clickable" onclick="location.href='games/oathbreaker/'" data-status="done">
+  <div class="card clickable" onclick="window.open('https://aniesway01.github.io/oathbreaker-narrative/','_blank')" data-status="done">
     <div class="card-top">
       <div class="card-title">Oathbreaker</div>
       <span class="card-num num-done">#9</span>
@@ -205,11 +205,11 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--
     <div class="card-desc">火紋風格戰術 RPG，傭兵團的緩慢變身。26萬字劇本</div>
     <div class="card-footer">
       <span class="badge badge-done">已完成</span>
-      <a class="card-link" href="games/oathbreaker/">閱讀 →</a>
+      <a class="card-link" href="https://aniesway01.github.io/oathbreaker-narrative/" target="_blank">閱讀 →</a>
     </div>
   </div>
 
-  <div class="card clickable" onclick="location.href='games/cursed-rock/'" data-status="done">
+  <div class="card clickable" onclick="window.open('https://aniesway01.github.io/cursed-rock-narrative/','_blank')" data-status="done">
     <div class="card-top">
       <div class="card-title">Cursed Rock</div>
       <span class="card-num num-done">#6</span>
@@ -222,11 +222,11 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--
     <div class="card-desc">撿到石頭後的變身故事，含夢境 vs 現實分支</div>
     <div class="card-footer">
       <span class="badge badge-done">已完成</span>
-      <a class="card-link" href="games/cursed-rock/">閱讀 →</a>
+      <a class="card-link" href="https://aniesway01.github.io/cursed-rock-narrative/" target="_blank">閱讀 →</a>
     </div>
   </div>
 
-  <div class="card clickable" onclick="location.href='games/secrets-of-charlton-school/'" data-status="done">
+  <div class="card clickable" onclick="window.open('https://aniesway01.github.io/secrets-charlton-narrative/','_blank')" data-status="done">
     <div class="card-top">
       <div class="card-title">Secrets of Charlton School</div>
       <span class="card-num num-done">#16</span>
@@ -239,11 +239,11 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--
     <div class="card-desc">魔法校園互動小說，36 角色，調查 Charlton School 的神秘事件</div>
     <div class="card-footer">
       <span class="badge badge-done">已完成</span>
-      <a class="card-link" href="games/secrets-of-charlton-school/">閱讀 →</a>
+      <a class="card-link" href="https://aniesway01.github.io/secrets-charlton-narrative/" target="_blank">閱讀 →</a>
     </div>
   </div>
 
-  <div class="card clickable" onclick="location.href='games/witches-of-ravenbrook/'" data-status="done">
+  <div class="card clickable" onclick="window.open('https://aniesway01.github.io/witches-ravenbrook-narrative/','_blank')" data-status="done">
     <div class="card-top">
       <div class="card-title">Witches of Ravenbrook</div>
       <span class="card-num num-done">#1</span>
@@ -256,11 +256,11 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--
     <div class="card-desc">Ravenbrook 大學萬聖節慶典被女巫劫持，地下城探險 + 戰鬥中變身機制</div>
     <div class="card-footer">
       <span class="badge badge-done">已完成</span>
-      <a class="card-link" href="games/witches-of-ravenbrook/">閱讀 →</a>
+      <a class="card-link" href="https://aniesway01.github.io/witches-ravenbrook-narrative/" target="_blank">閱讀 →</a>
     </div>
   </div>
 
-  <div class="card clickable" onclick="location.href='games/fem-clicker/'" data-status="done">
+  <div class="card clickable" onclick="window.open('https://aniesway01.github.io/fem-clicker-narrative/','_blank')" data-status="done">
     <div class="card-top">
       <div class="card-title">Fem Clicker</div>
       <span class="card-num num-done">#18</span>
@@ -273,11 +273,11 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--
     <div class="card-desc">放置型點擊遊戲，豐饒女神的雙路線變身</div>
     <div class="card-footer">
       <span class="badge badge-done">已完成</span>
-      <a class="card-link" href="games/fem-clicker/">閱讀 →</a>
+      <a class="card-link" href="https://aniesway01.github.io/fem-clicker-narrative/" target="_blank">閱讀 →</a>
     </div>
   </div>
 
-  <div class="card clickable" onclick="location.href='games/regency-masks/'" data-status="done">
+  <div class="card clickable" onclick="window.open('https://aniesway01.github.io/regency-masks-narrative/','_blank')" data-status="done">
     <div class="card-top">
       <div class="card-title">Regency Masks</div>
       <span class="card-num num-done">#3</span>
@@ -290,11 +290,11 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--
     <div class="card-desc">改編克蘇魯 TRPG《Masks of Nyarlathotep》，1803 攝政時代秘魯冒險</div>
     <div class="card-footer">
       <span class="badge badge-done">已完成</span>
-      <a class="card-link" href="games/regency-masks/">閱讀 →</a>
+      <a class="card-link" href="https://aniesway01.github.io/regency-masks-narrative/" target="_blank">閱讀 →</a>
     </div>
   </div>
 
-  <div class="card clickable" onclick="location.href='games/clean-pool/'" data-status="done">
+  <div class="card clickable" onclick="window.open('https://aniesway01.github.io/clean-pool-narrative/','_blank')" data-status="done">
     <div class="card-top">
       <div class="card-title">Clean Pool</div>
       <span class="card-num num-done">#7</span>
@@ -307,7 +307,151 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--
     <div class="card-desc">Rogue-like 敘事，游泳隊訓練設施中的神秘力量</div>
     <div class="card-footer">
       <span class="badge badge-done">已完成</span>
-      <a class="card-link" href="games/clean-pool/">閱讀 →</a>
+      <a class="card-link" href="https://aniesway01.github.io/clean-pool-narrative/" target="_blank">閱讀 →</a>
+    </div>
+  </div>
+
+  <div class="card clickable" onclick="window.open('https://aniesway01.github.io/last-stand-of-ra-narrative/','_blank')" data-status="done">
+    <div class="card-top">
+      <div class="card-title">Last Stand of Ra 拉的最後抵抗</div>
+      <span class="card-num num-done">#24</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">SugarCube (Twine)</span>
+      <span class="tag tag-passages">162 段落</span>
+    </div>
+    <div class="card-desc">埃及神話末日戰役，太陽神拉的最後防線 · 99% 已翻譯</div>
+    <div class="card-footer">
+      <span class="badge badge-done">已完成 — 含中文翻譯</span>
+      <a class="card-link" href="https://aniesway01.github.io/last-stand-of-ra-narrative/" target="_blank">閱讀 ↗</a>
+    </div>
+  </div>
+
+  <div class="card clickable" onclick="window.open('https://aniesway01.github.io/sunfish-city-narrative/','_blank')" data-status="done">
+    <div class="card-top">
+      <div class="card-title">Sunfish City 旗魚城</div>
+      <span class="card-num num-done">#25</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">SugarCube (Twine)</span>
+      <span class="tag tag-passages">417 段落</span>
+    </div>
+    <div class="card-desc">海岸城市沙盒冒險 · 89% 已翻譯</div>
+    <div class="card-footer">
+      <span class="badge badge-done">已完成 — 含中文翻譯</span>
+      <a class="card-link" href="https://aniesway01.github.io/sunfish-city-narrative/" target="_blank">閱讀 ↗</a>
+    </div>
+  </div>
+
+  <div class="card clickable" onclick="window.open('https://aniesway01.github.io/cursed-narrative/','_blank')" data-status="done">
+    <div class="card-top">
+      <div class="card-title">Cursed 被詛咒的</div>
+      <span class="card-num num-done">#26</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">SugarCube (Twine)</span>
+      <span class="tag tag-passages">12,473 段落</span>
+    </div>
+    <div class="card-desc">詛咒觸發的連鎖變身，多角色多房間沙盒 · 86% 已翻譯</div>
+    <div class="card-footer">
+      <span class="badge badge-done">已完成 — 含中文翻譯</span>
+      <a class="card-link" href="https://aniesway01.github.io/cursed-narrative/" target="_blank">閱讀 ↗</a>
+    </div>
+  </div>
+
+  <div class="card clickable" onclick="window.open('https://aniesway01.github.io/transylvania-narrative/','_blank')" data-status="done">
+    <div class="card-top">
+      <div class="card-title">Transylvania 特蘭西瓦尼亞</div>
+      <span class="card-num num-done">#27</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">SugarCube (Twine)</span>
+      <span class="tag tag-passages">4,419 段落</span>
+    </div>
+    <div class="card-desc">東歐吸血鬼大陸的冒險故事 · 94% 已翻譯</div>
+    <div class="card-footer">
+      <span class="badge badge-done">已完成 — 含中文翻譯</span>
+      <a class="card-link" href="https://aniesway01.github.io/transylvania-narrative/" target="_blank">閱讀 ↗</a>
+    </div>
+  </div>
+
+  <div class="card clickable" onclick="window.open('https://aniesway01.github.io/nmdb4-narrative/','_blank')" data-status="done">
+    <div class="card-top">
+      <div class="card-title">NMDB4-2</div>
+      <span class="card-num num-done">#28</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">SugarCube (Twine)</span>
+      <span class="tag tag-passages">592 段落</span>
+    </div>
+    <div class="card-desc">NMDB 系列第四部 · 92% 已翻譯</div>
+    <div class="card-footer">
+      <span class="badge badge-done">已完成 — 含中文翻譯</span>
+      <a class="card-link" href="https://aniesway01.github.io/nmdb4-narrative/" target="_blank">閱讀 ↗</a>
+    </div>
+  </div>
+
+  <div class="card clickable" onclick="window.open('https://aniesway01.github.io/veil-of-the-heir-narrative/','_blank')" data-status="done">
+    <div class="card-top">
+      <div class="card-title">Veil of the Heir 繼承者的面紗</div>
+      <span class="card-num num-done">#29</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">SugarCube (Twine)</span>
+      <span class="tag tag-passages">1,482 段落</span>
+    </div>
+    <div class="card-desc">繼承者的身份危機與宮廷陰謀 · 99.5% 已翻譯</div>
+    <div class="card-footer">
+      <span class="badge badge-done">已完成 — 含中文翻譯</span>
+      <a class="card-link" href="https://aniesway01.github.io/veil-of-the-heir-narrative/" target="_blank">閱讀 ↗</a>
+    </div>
+  </div>
+
+  <div class="card clickable" onclick="window.open('https://aniesway01.github.io/xcl-narrative/','_blank')" data-status="done">
+    <div class="card-top">
+      <div class="card-title">XCL</div>
+      <span class="card-num num-done">#30</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">SugarCube (Twine)</span>
+      <span class="tag tag-passages">6,892 段落</span>
+    </div>
+    <div class="card-desc">大型沙盒互動小說 · 71% 已翻譯</div>
+    <div class="card-footer">
+      <span class="badge badge-done">已完成 — 含中文翻譯</span>
+      <a class="card-link" href="https://aniesway01.github.io/xcl-narrative/" target="_blank">閱讀 ↗</a>
+    </div>
+  </div>
+
+  <div class="card clickable" onclick="window.open('https://aniesway01.github.io/wanton-cove-narrative/','_blank')" data-status="done">
+    <div class="card-top">
+      <div class="card-title">The Allure of Wanton Cove 放蕩灣的誘惑</div>
+      <span class="card-num num-done">#31</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">SugarCube (Twine)</span>
+      <span class="tag tag-passages">710 段落</span>
+    </div>
+    <div class="card-desc">克蘇魯風海岸小鎮的黑暗冒險 · 63% 已翻譯</div>
+    <div class="card-footer">
+      <span class="badge badge-done">已完成 — 含中文翻譯</span>
+      <a class="card-link" href="https://aniesway01.github.io/wanton-cove-narrative/" target="_blank">閱讀 ↗</a>
+    </div>
+  </div>
+
+  <div class="card clickable" onclick="window.open('https://aniesway01.github.io/ytlag-narrative/','_blank')" data-status="done">
+    <div class="card-top">
+      <div class="card-title">YTLAG 你投球像個女孩</div>
+      <span class="card-num num-done">#32</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">SugarCube (Twine)</span>
+      <span class="tag tag-passages">4,471 段落</span>
+    </div>
+    <div class="card-desc">棒球少年的變身故事 · 5% 已翻譯</div>
+    <div class="card-footer">
+      <span class="badge badge-wip">翻譯中</span>
+      <a class="card-link" href="https://aniesway01.github.io/ytlag-narrative/" target="_blank">閱讀 ↗</a>
     </div>
   </div>
 
@@ -443,7 +587,7 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--
 </div>
 
 <div class="footer-text">
-  Game Narratives &middot; 最後更新 2026-02-22 &middot; 由 AI 輔助解析與建構
+  Game Narratives &middot; 最後更新 2026-02-24 &middot; 由 AI 輔助解析與建構
 </div>
 
 <script>
