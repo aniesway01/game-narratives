@@ -53,24 +53,24 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--
 
 <div class="header">
   <h1>Game Narratives — 互動敘事地圖集</h1>
-  <p class="subtitle">Interactive Narrative Atlas &middot; 32 Games Tracked</p>
+  <p class="subtitle">Interactive Narrative Atlas &middot; 33 Games Tracked</p>
   <div class="stats-row">
-    <div class="stat"><div class="stat-num">32</div><div class="stat-label">遊戲總數</div></div>
-    <div class="stat"><div class="stat-num">23</div><div class="stat-label">已完成</div></div>
+    <div class="stat"><div class="stat-num">33</div><div class="stat-label">遊戲總數</div></div>
+    <div class="stat"><div class="stat-num">24</div><div class="stat-label">已完成</div></div>
     <div class="stat"><div class="stat-num">1</div><div class="stat-label">翻譯中</div></div>
     <div class="stat"><div class="stat-num">80,000+</div><div class="stat-label">段落總數</div></div>
   </div>
 </div>
 
 <div class="filters">
-  <button class="filter-btn active" onclick="filterCards('all')">全部 (32)</button>
-  <button class="filter-btn" onclick="filterCards('done')">已完成 (23)</button>
+  <button class="filter-btn active" onclick="filterCards('all')">全部 (33)</button>
+  <button class="filter-btn" onclick="filterCards('done')">已完成 (24)</button>
   <button class="filter-btn" onclick="filterCards('pending')">待下載 (7)</button>
   <button class="filter-btn" onclick="filterCards('fail')">無法取得 (2)</button>
 </div>
 
 <!-- ===== Completed (14) ===== -->
-<div class="section-title" data-section="done"><span>已完成</span> — 23 款遊戲已解析，可點擊瀏覽（含中文翻譯）</div>
+<div class="section-title" data-section="done"><span>已完成</span> — 24 款遊戲已解析，可點擊瀏覽（含中文翻譯）</div>
 <div class="grid" id="grid-done">
 
   <div class="card clickable" onclick="window.open('https://aniesway01.github.io/magical-camp-narrative/','_blank')" data-status="done">
@@ -455,6 +455,23 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--
     </div>
   </div>
 
+  <div class="card clickable" onclick="window.open('https://aniesway01.github.io/ridinghood-narrative/','_blank')" data-status="done">
+    <div class="card-top">
+      <div class="card-title">Little Red of Ridinghood 小紅帽的騎行鎮</div>
+      <span class="card-num num-done">#33</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-engine">SugarCube (Twine)</span>
+      <span class="tag tag-passages">319 段落</span>
+      <span class="tag tag-version">v1.0.3</span>
+    </div>
+    <div class="card-desc">童話改編互動小說，含 404 張角色圖 · 97% 已翻譯</div>
+    <div class="card-footer">
+      <span class="badge badge-done">已完成 — 含中文翻譯</span>
+      <a class="card-link" href="https://aniesway01.github.io/ridinghood-narrative/" target="_blank">閱讀 ↗</a>
+    </div>
+  </div>
+
 </div>
 
 <!-- ===== Pending (7) ===== -->
@@ -587,7 +604,7 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--
 </div>
 
 <div class="footer-text">
-  Game Narratives &middot; 最後更新 2026-02-24 &middot; 由 AI 輔助解析與建構
+  Game Narratives &middot; 最後更新 2026-03-02 &middot; 由 AI 輔助解析與建構
 </div>
 
 <script>
